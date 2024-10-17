@@ -6,7 +6,7 @@ A class is a blueprint for creating objects, representing a group of properties 
 - **Purpose**: Acts as a template for objects.
 - **Example**:
     ```java
-    Student prasu; // Student is the class
+    Student prasu; // Reference variable
     ```
 
 ### Types of Classes:
@@ -118,13 +118,60 @@ Instance variables are properties defined inside objects of a class. They can be
 ## Constructor
 A constructor is a special function that gets called when an object is created. Its name is always the same as the class name.
 
-- **Example**:
-    ```java
-    public Student(String name) {
-        this.name = name;
-    }
-    prasu = new Student("Prasu"); // Calls the constructor when creating the object
-    ```
+### Types of Constructors
+
+1. **Default Constructor**:
+    - A default constructor is provided by the compiler if no other constructor is defined. It doesn't take any parameters and simply initializes object members to default values.
+
+    - **Example**:
+      ```java
+      class Student {
+          String name;
+          int age;
+          
+          // Default constructor
+          public Student() {
+              name = "Unknown";
+              age = 0;
+          }
+      }
+      ```
+
+2. **Parameterized Constructor**:
+    - A parameterized constructor accepts arguments, allowing custom values to be passed when an object is created.
+
+    - **Example**:
+      ```java
+      class Student {
+          String name;
+          int age;
+          
+          // Parameterized constructor
+          public Student(String name, int age) {
+              this.name = name;
+              this.age = age;
+          }
+      }
+ 
+      Student prasu = new Student("Prasu", 20); // Calls the parameterized constructor
+      ```
+
+3. **Copy Constructor**:
+    - A copy constructor creates a new object by copying the values from an existing object.
+
+    - **Example**:
+      ```java
+      class Student {
+          String name;
+          int age;
+          
+          // Copy constructor
+          public Student(Student s) {
+              this.name = s.name;
+              this.age = s.age;
+          }
+      }
+      ```
 
 ## `this` Keyword
 The `this` keyword refers to the current instance of the object and is often used to resolve naming conflicts between instance variables and parameters.
