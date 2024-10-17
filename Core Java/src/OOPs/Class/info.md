@@ -1,3 +1,4 @@
+
 ## Class
 A class is a blueprint for creating objects, representing a group of properties and methods. It starts with a capital letter and is designed for creating custom data structures.
 
@@ -7,6 +8,73 @@ A class is a blueprint for creating objects, representing a group of properties 
     ```java
     Student prasu; // Student is the class
     ```
+
+### Types of Classes:
+1. **Public Class**: A class that can be accessed from any other class in the program, regardless of the package they belong to.
+  - **Example**:
+    ```java
+    public class Main {
+    }
+    ```
+
+2. **Static Class**: A static class is a nested class (a class within another class) that can be accessed without creating an instance of the outer class, and it can only access static members of the outer class.
+  - **Example**:
+    ```java
+    public class Main {
+        static class Node { 
+        }
+    }
+    ```
+
+3. **Singleton Class**: A Singleton class in Java ensures that only one instance of the class is created and provides a global point of access to that instance.
+
+   **Rules**:
+  - The constructor is private to prevent instantiation from outside the class.
+  - A static method provides the single instance of the class.
+  - The instance is stored in a static variable.
+
+  - **Example**:
+    ```java
+    public class Singleton {
+        // Static variable to hold the single instance
+        private static Singleton instance;
+
+        // Private constructor to prevent instantiation
+        private Singleton() {}
+
+        // Static method to provide the single instance
+        public static Singleton getInstance() {
+            if (instance == null) {
+                instance = new Singleton();
+            }
+            return instance;
+        }
+    }
+    ```
+
+## Static Keyword
+The `static` keyword is used to indicate that a member (variable, method, nested class) belongs to the class itself rather than instances of the class.
+
+### Key Rules:
+- Static fields (variables) are shared among all instances of the class.
+- Static methods can be called without creating an instance of the class.
+- Static blocks are used for static initialization of a class.
+- Static nested classes can be accessed without an instance of the outer class.
+
+  **Example**:
+  ```java
+  public class Main {
+      static int a;
+
+      static {
+          a = 0;
+          System.out.println("Will run once");
+      }
+  }
+  ```
+
+### Why is the main method static?
+The `main` method is static because it can be used without creating an object. Without the `static` keyword, the JVM cannot run the program as it requires an instance to access non-static methods.
 
 ## Object
 An object is an instance of a class. It is a reference type, meaning it holds the memory address of where the object is stored.

@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="414a0ab2-33ae-4c10-80d2-598b2fa50994" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OOPs/Class/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OOPs/Class/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOPs/Class/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OOPs/Class/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OOPs/Class/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOPs/Class/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OOPs/Class/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOPs/Class/info.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -54,6 +59,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.OOPs.Class.Main.executor": "Run",
+    "Application.OOPs.Package.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "deletionFromPopupRequiresConfirmation": "false",
@@ -70,7 +76,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "editor.preferences.import",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -128,7 +134,8 @@
       <workItem from="1729110696093" duration="1091000" />
       <workItem from="1729111860276" duration="198000" />
       <workItem from="1729112594413" duration="137000" />
-      <workItem from="1729112744657" duration="208000" />
+      <workItem from="1729112744657" duration="532000" />
+      <workItem from="1729166465303" duration="3464000" />
     </task>
     <servers />
   </component>
