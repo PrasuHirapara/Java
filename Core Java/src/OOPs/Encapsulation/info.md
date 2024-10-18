@@ -96,13 +96,13 @@ Area is square of side 4
 
 ### Final Keyword
 - **Prevents overriding**: The `final` keyword prevents method overriding and inheritance of classes.
-- **Reason**: Overriding depends on object and static does not depend upon object. Hence, static method ca not be overridden. 
+- **Reason**: Overriding depends on object and static does not depend upon object. Hence, static method can not be overridden. 
 - **Immutable values**: Variables declared as `final` cannot have their values changed once assigned.
 - **Known as Early Binding**: Early binding refers to the process where the method to be called is resolved at compile-time, ensuring that the appropriate method is linked during compilation, thus preventing runtime changes.
 
 ```java
 // Final class
-final class FinalShape {
+final class Shape {
     void area() {
         System.out.println("I am in FinalShape");
     }
@@ -110,7 +110,7 @@ final class FinalShape {
 
 // Attempting to extend FinalShape will cause a compile-time error
 /*
-class Square extends FinalShape {
+class Square extends Shape {
     void area() {
         System.out.println("Area is square of side");
     }
@@ -135,7 +135,7 @@ class AdvancedCircle extends Circle {
 
 public class Main {
     public static void main(String[] args) {
-        FinalShape finalShape = new FinalShape();
+        Shape Shape = new Shape();
         finalShape.area();  // Output: I am in FinalShape
 
         Circle circle = new Circle();

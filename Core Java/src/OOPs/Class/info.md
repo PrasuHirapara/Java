@@ -85,6 +85,64 @@ An object is an instance of a class. It is a reference type, meaning it holds th
     prasu = new Student(); // prasu is now an object
     ```
 
+
+## The `Object` Class in Java
+
+The `Object` class is the root of the class hierarchy. Every class in Java is either a direct or indirect subclass of `Object`. It provides a set of fundamental methods that all Java objects inherit and can override.
+
+### Key Methods of the `Object` Class that Can Be Overridden:
+
+1. **hashCode()**
+    - Returns a hash code value for the object, used in hashing-based collections like `HashMap`.
+
+2. **equals(Object obj)**
+    - Determines whether two object references are considered equal, based on custom logic that can be implemented.
+
+3. **clone()**
+    - Creates and returns a copy (clone) of the object, typically using shallow copying unless deep copying is implemented.
+
+4. **finalize()**
+    - Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. It is rarely used and largely deprecated.
+
+5. **toString()**
+    - Returns a string representation of the object, typically overridden to provide meaningful information about the object.
+
+---
+
+## Other Important Methods in the `Object` Class:
+
+1. **getClass()**
+    - Returns the runtime class of the object (i.e., the class the object was instantiated from).
+    - Methods of getClass: **[getName(), getSuperclass(), getInterfaces(), getDeclaredMethods(), getMethods(), getConstructors(), getFields(), getModifiers(), getPackage(), newInstance()]**
+   ### Example:
+   ```java
+   public class Main {
+       public static void main(String[] args) {
+           Main obj = new Main();
+           System.out.println("Class: " + obj.getClass().getName());
+       }
+   }
+   // Output: Class: Main
+   ```
+
+2. **instanceof**
+    - A keyword used to test whether an object is an instance of a specific class or implements a specific interface.
+
+   ### Example:
+   ```java
+   public class Main {
+       public static void main(String[] args) {
+           String text = "Hello";
+           if (text instanceof String) {
+               System.out.println("text is an instance of String");
+           }
+       }
+   }
+   // Output: text is an instance of String
+   ```
+
+---
+
 ## `new` Keyword
 The `new` keyword dynamically allocates memory for an object and returns a reference to it.
 
