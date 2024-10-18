@@ -101,4 +101,60 @@ The `super` keyword is used to access the properties and methods of the parent c
 ### Rule:
 a) Always call `super()` first to ensure the parent class is initialized before the child class, maintaining proper inheritance structure.
 
-### Types of Inheritance
+
+## Types of Inheritance in Java
+
+Inheritance is a mechanism in Java where one class acquires the properties and behaviors of another class. It helps in code reusability and establishes a relationship between parent and child classes.
+
+### 1. Single Inheritance
+In single inheritance, a class (child) inherits from only one superclass (parent).
+#### Example:
+```java
+class Box {
+    int length, breadth, height;
+}
+
+class WeightBox extends Box {
+    int weight;
+}
+```
+
+### 2. Multilevel Inheritance
+In multilevel inheritance, a class is derived from a class which is also derived from another class.
+#### Example:
+```java
+class Box {
+    int length, breadth, height;
+}
+
+class WeightBox extends Box {
+    int weight;
+}
+
+class ShipmentBox extends WeightBox {
+    int cost;
+}
+```
+
+### 3. Hierarchical Inheritance
+In hierarchical inheritance, multiple classes inherit from a single superclass.
+#### Example:
+```java
+class Box {
+    int length, breadth, height;
+}
+
+class WeightBox extends Box {
+    int weight;
+}
+
+class ColorBox extends Box {
+    String color;
+}
+```
+
+### 4. Hybrid Inheritance
+Java doesn’t support hybrid inheritance directly to avoid ambiguity and the diamond problem. However, it can be achieved using interfaces.
+
+### Why Java Doesn’t Support Multiple Inheritance
+Java does not support multiple inheritance with classes to avoid ambiguity and complexity caused by the diamond problem. This occurs when a class inherits from two classes that have methods with the same signature, leading to confusion about which method to execute. Instead, Java uses interfaces to provide multiple inheritance-like functionality.

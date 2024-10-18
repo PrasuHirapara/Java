@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="414a0ab2-33ae-4c10-80d2-598b2fa50994" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OOPs/Class/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOPs/Class/info.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OOPs/Inheritance/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOPs/Inheritance/info.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +55,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.OOPs.Class.Main.executor": "Run",
+    "Application.OOPs.Encapsulation.Main.executor": "Run",
     "Application.OOPs.Inheritance.Main.executor": "Run",
     "Application.OOPs.Package.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -73,11 +74,11 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.import",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.OOPs.Encapsulation.Main">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Core Java" />
@@ -85,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OOPs.Class.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OOPs.Class.Main" />
+    <configuration name="OOPs.Encapsulation.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OOPs.Encapsulation.Main" />
       <module name="Core Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="OOPs.Class.*" />
+          <option name="PATTERN" value="OOPs.Encapsulation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,7 +101,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.OOPs.Class.Main" />
+        <item itemvalue="Application.OOPs.Encapsulation.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +134,12 @@
       <workItem from="1729112594413" duration="137000" />
       <workItem from="1729112744657" duration="532000" />
       <workItem from="1729166465303" duration="3748000" />
-      <workItem from="1729190974290" duration="4235000" />
+      <workItem from="1729190974290" duration="4921000" />
+      <workItem from="1729222300539" duration="2869000" />
+      <workItem from="1729239168636" duration="1545000" />
+      <workItem from="1729242324513" duration="1467000" />
+      <workItem from="1729264534385" duration="912000" />
+      <workItem from="1729265470781" duration="4302000" />
     </task>
     <servers />
   </component>
