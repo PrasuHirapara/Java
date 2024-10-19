@@ -16,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -57,6 +58,7 @@
     "Application.OOPs.Class.Main.executor": "Run",
     "Application.OOPs.Encapsulation.Main.executor": "Run",
     "Application.OOPs.Inheritance.Main.executor": "Run",
+    "Application.OOPs.Interface.Main.executor": "Run",
     "Application.OOPs.Package.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -78,7 +80,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.OOPs.Abstraction.Main">
+  <component name="RunManager" selected="Application.OOPs.Interface.Main">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Core Java" />
@@ -99,12 +101,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OOPs.Interface.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OOPs.Interface.Main" />
+      <module name="Core Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OOPs.Interface.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.OOPs.Abstraction.Main" />
+      <item itemvalue="Application.OOPs.Interface.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OOPs.Interface.Main" />
         <item itemvalue="Application.OOPs.Abstraction.Main" />
       </list>
     </recent_temporary>
@@ -144,7 +161,7 @@
       <workItem from="1729242324513" duration="1467000" />
       <workItem from="1729264534385" duration="912000" />
       <workItem from="1729265470781" duration="13860000" />
-      <workItem from="1729336947135" duration="2459000" />
+      <workItem from="1729336947135" duration="4775000" />
     </task>
     <servers />
   </component>
