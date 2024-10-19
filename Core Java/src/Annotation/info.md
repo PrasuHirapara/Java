@@ -25,7 +25,7 @@ To create your own annotation in Java, use the `@interface` keyword. You can spe
 
 ## Steps:
 1. Create the custom annotation using `@interface`.
-2. Define the retention policy and target using `@Retention` and `@Target`.
+2. Define the retention policy and target using `@Retention` and `@Target`. For multiple target use Target({}).
 3. Apply the annotation to the desired elements.
 4. Use reflection to access the annotation at runtime.
 
