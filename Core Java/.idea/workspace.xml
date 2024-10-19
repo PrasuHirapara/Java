@@ -80,7 +80,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.OOPs.Interface.Main">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Core Java" />
@@ -161,7 +161,7 @@
       <workItem from="1729242324513" duration="1467000" />
       <workItem from="1729264534385" duration="912000" />
       <workItem from="1729265470781" duration="13860000" />
-      <workItem from="1729336947135" duration="4775000" />
+      <workItem from="1729336947135" duration="7832000" />
     </task>
     <servers />
   </component>
