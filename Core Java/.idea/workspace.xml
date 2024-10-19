@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="414a0ab2-33ae-4c10-80d2-598b2fa50994" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comparator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comparator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comparator/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comparator/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comparator/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comparator/info.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +84,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Comparator.Main">
+  <component name="RunManager">
     <configuration name="Comparator.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Comparator.Main" />
       <module name="Core Java" />
@@ -158,7 +155,7 @@
       <workItem from="1729265470781" duration="13860000" />
       <workItem from="1729336947135" duration="8130000" />
       <workItem from="1729350532176" duration="6234000" />
-      <workItem from="1729357459176" duration="2514000" />
+      <workItem from="1729357459176" duration="3883000" />
     </task>
     <servers />
   </component>
