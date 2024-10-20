@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="414a0ab2-33ae-4c10-80d2-598b2fa50994" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/OOPs/CollectionFrameWork/info.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExceptionHandling/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExceptionHandling/info.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +88,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ExceptionHandling.Main">
+  <component name="RunManager">
     <configuration name="Comparator.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Comparator.Main" />
       <module name="Core Java" />
@@ -173,7 +175,7 @@
       <workItem from="1729350532176" duration="6234000" />
       <workItem from="1729357459176" duration="4159000" />
       <workItem from="1729398117346" duration="65000" />
-      <workItem from="1729444503504" duration="3809000" />
+      <workItem from="1729444503504" duration="5718000" />
     </task>
     <servers />
   </component>

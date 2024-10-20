@@ -10,6 +10,15 @@
 | Checked/Unchecked | Always unchecked |
 | User-programming related | System related  |
 
+## Adding Exception Signature to Method in Java
+
+When a method can throw a checked exception, it must declare the exception using the `throws` keyword.
+```java
+public static void throwError() throws CustomException {
+    throw new CustomException("Exception");
+}
+```
+
 ## Throwable Class
 
 **Definition**: The `Throwable` class is the superclass of all errors and exceptions in Java. It works by representing any issue that can be thrown or caught.
