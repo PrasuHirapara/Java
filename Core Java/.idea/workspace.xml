@@ -55,6 +55,8 @@
   "keyToString": {
     "Application.Annotation.Main.executor": "Run",
     "Application.Comparator.Main.executor": "Run",
+    "Application.ExceptionHandling.Main.executor": "Run",
+    "Application.Labmda.Main.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.OOPs.Abstraction.Main.executor": "Run",
     "Application.OOPs.Class.Main.executor": "Run",
@@ -84,13 +86,26 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ExceptionHandling.Main">
     <configuration name="Comparator.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Comparator.Main" />
       <module name="Core Java" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Comparator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExceptionHandling.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ExceptionHandling.Main" />
+      <module name="Core Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ExceptionHandling.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,6 +128,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ExceptionHandling.Main" />
         <item itemvalue="Application.Comparator.Main" />
         <item itemvalue="Application.Main" />
       </list>
@@ -155,7 +171,9 @@
       <workItem from="1729265470781" duration="13860000" />
       <workItem from="1729336947135" duration="8130000" />
       <workItem from="1729350532176" duration="6234000" />
-      <workItem from="1729357459176" duration="3883000" />
+      <workItem from="1729357459176" duration="4159000" />
+      <workItem from="1729398117346" duration="65000" />
+      <workItem from="1729444503504" duration="3809000" />
     </task>
     <servers />
   </component>
