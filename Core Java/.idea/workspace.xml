@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="414a0ab2-33ae-4c10-80d2-598b2fa50994" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/OOPs/CollectionFrameWork/info.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExceptionHandling/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExceptionHandling/info.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OOPs/Package/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOPs/Package/info.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +38,9 @@
     &quot;accountId&quot;: &quot;5ae8cd08-7800-410a-94c3-8298f4308330&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Threading/Main.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -57,17 +60,22 @@
   "keyToString": {
     "Application.Annotation.Main.executor": "Run",
     "Application.Comparator.Main.executor": "Run",
+    "Application.DaemonThread.executor": "Run",
     "Application.ExceptionHandling.Main.executor": "Run",
     "Application.Labmda.Main.executor": "Run",
+    "Application.Main (1).executor": "Run",
     "Application.Main.executor": "Run",
     "Application.OOPs.Abstraction.Main.executor": "Run",
     "Application.OOPs.Class.Main.executor": "Run",
+    "Application.OOPs.CollectionFrameWork.Main.executor": "Run",
     "Application.OOPs.Encapsulation.Main.executor": "Run",
     "Application.OOPs.Generics.Main.executor": "Run",
     "Application.OOPs.Inheritance.Main.executor": "Run",
     "Application.OOPs.Interface.Main.executor": "Run",
     "Application.OOPs.Package.Main.executor": "Run",
+    "Application.TableSync.executor": "Run",
     "Application.TestAnnotation.executor": "Run",
+    "Application.Threading.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "deletionFromPopupRequiresConfirmation": "false",
@@ -84,30 +92,17 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "build.tools",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="Comparator.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Comparator.Main" />
+  <component name="RunManager" selected="Application.TableSync">
+    <configuration name="DaemonThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Threading.DaemonThread" />
       <module name="Core Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Comparator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExceptionHandling.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ExceptionHandling.Main" />
-      <module name="Core Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ExceptionHandling.*" />
+          <option name="PATTERN" value="Threading.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,11 +111,24 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OOPs.Generics.Main" />
+      <option name="MAIN_CLASS_NAME" value="Threading.Main" />
       <module name="Core Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="OOPs.Generics.*" />
+          <option name="PATTERN" value="Threading.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TableSync" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Threading.TableSync" />
+      <module name="Core Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Threading.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,8 +138,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ExceptionHandling.Main" />
-        <item itemvalue="Application.Comparator.Main" />
+        <item itemvalue="Application.TableSync" />
+        <item itemvalue="Application.DaemonThread" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -175,7 +183,11 @@
       <workItem from="1729350532176" duration="6234000" />
       <workItem from="1729357459176" duration="4159000" />
       <workItem from="1729398117346" duration="65000" />
-      <workItem from="1729444503504" duration="5718000" />
+      <workItem from="1729444503504" duration="6408000" />
+      <workItem from="1729485703650" duration="543000" />
+      <workItem from="1729528041352" duration="7116000" />
+      <workItem from="1729611263270" duration="3130000" />
+      <workItem from="1729780651131" duration="5239000" />
     </task>
     <servers />
   </component>

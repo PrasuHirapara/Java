@@ -34,7 +34,7 @@ Java provides a set of standard libraries through in-built packages that simplif
 ## 1. java.lang
 The `java.lang` package contains fundamental classes and interfaces closely tied to the language itself, such as basic types, math operations, and exception handling.
 
-- Key classes/interfaces: `String`, `Object`, `Math`, `Thread`, `Exception`, `Integer`, `Double`, `System`, `Runtime`, `Class`.
+- Key classes/interfaces: `String`, `Object`, `Math`, `Threading`, `Exception`, `Integer`, `Double`, `System`, `Runtime`, `Class`.
 
 ### Example:
 ```java
