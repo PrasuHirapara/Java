@@ -136,7 +136,7 @@ class ThreadLifeCycle extends Thread {
 
 Daemon threads are low-priority threads that run in the background to perform tasks like garbage collection.
 -JVM will wait for user thread to complete although main thread is TERMINATED.
--JVM will won't wait for Daemon thread to be in TERMINATED state. If main thread is terminated all Daemon thread will be terminated.
+-JVM won't wait for Daemon thread to be in TERMINATED state. If main thread is terminated all Daemon thread will be terminated.
 
 #### Example:
 ```java
@@ -166,6 +166,7 @@ class DaemonThread extends Thread {
 Synchronization ensures that only one thread can access a resource at a time.
 Using keyword `synchronized`.
 Other thread will wait for one thread to complete synchronized task.
+Other thread won't run until one thread terminates.
 
 #### Example:
 ```java
@@ -211,53 +212,94 @@ public class TableSync {
 }
 ```
 
-## Locks
+## Dis-advantages of using `synchronized` keyword
+-If one thread takes more time then other threads can not access that method i.e. there is no time out mechanism.
+-Ex: If writing in db is taking more time duw to slower internet connection then other thread has to wait, but we can use Locks to set time out so that other thread can execute it if one is taking too much time to complete. 
 
+## Lock
+Lock is interface. Implementation is given by `ReentrantLock` class.
 Locks provide more flexibility than synchronized blocks. The ReentrantLock class allows explicit locking and unlocking.
+
+### Methods in the `Lock` class
+
+- **`lock()`**: Acquires the lock if available, blocking otherwise.
+- **`unlock()`**: Releases the lock held by the current thread.
+- **`tryLock()`**: Attempts to acquire the lock immediately, returning a boolean.
+- **`tryLock(long time, TimeUnit unit)`**: Attempts to acquire the lock within a specified time.
+- **`lockInterruptibly()`**: Acquires the lock unless interrupted.
+- **`newCondition()`**: Returns a new `Condition` instance bound to this lock.
+
+### Types of Locks:
+1) Intrinsic Locks: Every object has intrinsic lock which will be used when using `synchronized`.
+2) Explicit Locks: More advanced control over locks which can be controlled by Lock class.
 
 #### Example:
 ```java
-class PrintNumbers {
-    private final Lock lock = new ReentrantLock();
+package Threading;
 
-    public void print(int n) {
-        lock.lock();
-        try {
-            for (int i = 1; i <= 5; i++) {
-                System.out.println(n * i);
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
+public class Locking {
+
+    static class BankAccount {
+        protected final Lock lock = new ReentrantLock();
+        private int balance = 100;
+
+        public void withdraw(int amount) throws InterruptedException {
+            System.out.println(Thread.currentThread().getName() + " attempting to withdraw " + amount);
+
+            if (lock.tryLock(1000, TimeUnit.MILLISECONDS)) {
+                try {
+                    // Check balance after acquiring lock
+                    if (amount <= balance) {
+                        // Simulating a delay in withdrawal processing
+                        Thread.sleep(3000);
+                        balance -= amount;
+                        System.out.println(Thread.currentThread().getName() + " successfully withdrawn. Balance " + balance);
+                    } else {
+                        System.out.println(Thread.currentThread().getName() + " unsuccessful - insufficient balance. Balance = " + balance);
+                    }
+                }catch (InterruptedException e) {
+                    Thread.currentThread().interrupt(); // setting that this thread has been interrupted.
+                }
+                finally {
+                    lock.unlock(); // Ensure the lock is released
+                }
+            } else {
+                System.out.println(Thread.currentThread().getName() + " could not acquire lock and withdraw. Balance = " + balance);
             }
-        } finally {
-            lock.unlock();
         }
     }
-}
 
-class LockThread extends Thread {
-    PrintNumbers printNumbers;
-    int num;
+    public static void main(String[] args) throws InterruptedException {
+        BankAccount account = new BankAccount();
 
-    LockThread(PrintNumbers pn, int num) {
-        this.printNumbers = pn;
-        this.num = num;
-    }
+        Runnable task = () -> {
+            try {
+                account.withdraw(50);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        };
 
-    public void run() {
-        printNumbers.print(num);
-    }
+        Thread t1 = new Thread(task, "Thread1");
+        Thread t2 = new Thread(task, "Thread2");
 
-    public static void main(String[] args) {
-        PrintNumbers pn = new PrintNumbers();
-        LockThread t1 = new LockThread(pn, 5);
-        LockThread t2 = new LockThread(pn, 100);
         t1.start();
         t2.start();
     }
 }
+
 ```
 
 ## Fairness in Lock
 
 By default, locks are not fair. You can make a lock fair by passing `true` to the constructor of ReentrantLock.
+-Thread which has requested first will execute first instead of randomness.
+-First come first serve.
+-Solves starvation problem.
 
 ```java
 Lock lock = new ReentrantLock(true);  // Fair lock
@@ -266,7 +308,7 @@ Lock lock = new ReentrantLock(true);  // Fair lock
 ## Read-Write Lock
 
 The `ReadWriteLock` allows multiple threads to read a resource simultaneously, but only one thread can write.
-
+-If write lock is acquired then reading has to wait for writing to be completed. 
 #### Example:
 ```java
 class ReadWriteExample {
@@ -309,29 +351,49 @@ class MainReadWrite {
 ## Deadlock
 A deadlock occurs when two or more threads are blocked forever, each waiting on the other.
 
+### Solution : use `ReentrantLock` class.
+
 **Example:**
 ```java
-class Resource {
-    synchronized void methodA(Resource b) {
-        System.out.println(Thread.currentThread().getName() + " method A");
-        b.methodB(this);  // Trying to call methodB of object b
-    }
+package Threading;
 
-    synchronized void methodB(Resource a) {
-        System.out.println(Thread.currentThread().getName() + " method B");
-        a.methodA(this);  // Trying to call methodA of object a
-    }
-}
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
-public class DeadlockExample {
+public class Deadlock {
+    private final Lock lock = new ReentrantLock();
+
     public static void main(String[] args) {
-        Resource r1 = new Resource();
-        Resource r2 = new Resource();
+        Deadlock d = new Deadlock();
+        d.outerMethod();
+    }
 
-        new Thread(() -> r1.methodA(r2), "Thread 1").start();
-        new Thread(() -> r2.methodB(r1), "Thread 2").start();
+    public void outerMethod() {
+        lock.lock();
+
+        try {
+            System.out.println("Inside outerMethod");
+//            this will lead to deadlock as innerMethod depends on outerMethod lock to unlock and run innerMethod and 
+//            innerMethod depends on outerMethod to unlock lock.
+
+//            still works because of ReentrantLock -> Gives lock to whom it requires
+            innerMethod();
+        } finally {
+            lock.unlock();
+        }
+    }
+
+    public void innerMethod() {
+        lock.lock();
+
+        try {
+            System.out.println("Inside innerMethod");
+        } finally {
+            lock.unlock();
+        }
     }
 }
+
 ```
 
 ## Thread Communication

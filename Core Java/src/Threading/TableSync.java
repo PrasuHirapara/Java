@@ -1,33 +1,34 @@
 package Threading;
 
-class Table {
-    synchronized void printTable(int n) {
-        for (int i = 1; i <= 5; i++) {
-            System.out.println(n * i);
-            try {
-                Thread.sleep(400);
-            } catch (InterruptedException e) {
-                System.out.println(e);
+public class TableSync {
+
+    static class Table {
+        synchronized void printTable(int n) {
+            for (int i = 1; i <= 5; i++) {
+                System.out.println(n * i);
+                try {
+                    Thread.sleep(400);
+                } catch (InterruptedException e) {
+                    System.out.println(e);
+                }
             }
         }
     }
-}
 
-class Print extends Thread {
-    private Table t;
-    private int n;
+    static class Print extends Thread {
+        private Table t;
+        private int n;
 
-    Print(Table t, int n) {
-        this.t = t;
-        this.n = n;
+        Print(Table t, int n) {
+            this.t = t;
+            this.n = n;
+        }
+
+        public void run() {
+            t.printTable(n);
+        }
     }
 
-    public void run() {
-        t.printTable(n);
-    }
-}
-
-public class TableSync {
     public static void main(String[] args) {
         Table obj = new Table();
 
