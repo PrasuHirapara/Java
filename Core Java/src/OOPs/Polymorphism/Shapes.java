@@ -1,4 +1,4 @@
-package OOPs.Encapsulation;
+package OOPs.Polymorphism;
 
 public class Shapes {
     void area() {

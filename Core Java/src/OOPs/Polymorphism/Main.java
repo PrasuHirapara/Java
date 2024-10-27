@@ -1,4 +1,4 @@
-package OOPs.Encapsulation;
+package OOPs.Polymorphism;
 
 public class Main {
     public static void main(String[] args) {

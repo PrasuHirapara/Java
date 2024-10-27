@@ -396,42 +396,86 @@ public class Deadlock {
 
 ```
 
-## Thread Communication
-Threads can communicate with each other using methods like wait(), notify(), and notifyAll().
+## Thread Communication in Java
 
-Example:
+Threads can communicate with each other. Many methods are used for inter-thread communication and help synchronize the execution of threads by coordinating their states.
+
+- `wait()`: Pauses the current thread until another thread calls `notify()` or `notifyAll()` on the same object.
+- `notify()`: Wakes up a single thread that is waiting on the object’s monitor.
+- `notifyAll()`: Wakes up all threads that are waiting on the object's monitor.
+
+### Producer-Consumer Example
 ```java
-class Customer {
-    int amount = 10000;
+class ItemQueue {
+    private int item;
+    private boolean available = false;
 
-    synchronized void withdraw(int amount) {
-        System.out.println("Going to withdraw...");
-        if (this.amount < amount) {
-            System.out.println("Not enough balance; waiting for deposit...");
+    public synchronized void produce(int item) {
+        while (available) {
             try {
                 wait();
             } catch (InterruptedException e) {
-                System.out.println(e);
+                Thread.currentThread().interrupt();
             }
         }
-        this.amount -= amount;
-        System.out.println("Withdrawal completed: " + amount);
+        this.item = item;
+        available = true;
+        System.out.println("Produced: " + item);
+        notify();
     }
 
-    synchronized void deposit(int amount) {
-        System.out.println("Going to deposit...");
-        this.amount += amount;
-        System.out.println("Deposit completed: " + amount);
-        notify();  // Notifying waiting thread
+    public synchronized int consume() {
+        while (!available) {
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        }
+        available = false;
+        System.out.println("Consumed: " + item);
+        notify();
+        return item;
     }
 }
 
-public class ThreadCommunicationExample {
-    public static void main(String[] args) {
-        Customer c = new Customer();
+class Producer extends Thread {
+    private final ItemQueue queue;
 
-        new Thread(() -> c.withdraw(15000)).start();
-        new Thread(() -> c.deposit(10000)).start();
+    Producer(ItemQueue queue) {
+        this.queue = queue;
+    }
+
+    @Override
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            queue.produce(i);
+        }
+    }
+}
+
+class Consumer extends Thread {
+    private final ItemQueue queue;
+
+    Consumer(ItemQueue queue) {
+        this.queue = queue;
+    }
+
+    @Override
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            queue.consume();
+        }
+    }
+}
+
+public class ThreadCommunication {
+    public static void main(String[] args) {
+        ItemQueue queue = new ItemQueue();
+        Producer producer = new Producer(queue);
+        Consumer consumer = new Consumer(queue);
+        producer.start();
+        consumer.start();
     }
 }
 ```
@@ -485,41 +529,106 @@ Example:
 ```java
 public class LambdaThreadExample {
     public static void main(String[] args) {
-        Runnable task = () -> {
-            for (int i = 0; i < 5; i++) {
-                System.out.println("Thread running using Lambda: " + i);
-            }
-        };
-
-        Thread thread = new Thread(task);
-        thread.start();
+//        Runnable task = () -> {
+//            for (int i = 0; i < 5; i++) {
+//                System.out.println("Thread running using Lambda: " + i);
+//            }
+//        };
+//
+//        Thread thread = new Thread(task);
+      
+      Thread t1 = new Thread(() -> {
+        for (int i = 0; i < 5; i++) {
+          System.out.println("Thread running using Lambda: " + i);
+        }
+      });
+      
+      t1.start();
     }
 }
 ```
-## Thread Pooling
-A thread pool manages multiple worker threads to execute tasks concurrently.
 
-Example:
+## Thread Pooling OR Execute Framework
+
+- A thread pool manages multiple worker threads to execute tasks concurrently. By reusing existing threads, it reduces the overhead of creating and destroying threads, optimizing resource usage.
+- Resource management
+- Increase in response time.
+- Control over Thread count.
+- Thread re-usability
+
+### Key Classes and Methods
+
+- **`ExecutorService`**: An interface providing methods for managing and controlling thread pools.
+  - **`submit(Runnable task)`**: Submits a task for execution by a thread in the pool.
+  - **`shutdown()`**: Initiates an orderly shutdown of the pool, stopping new tasks from being submitted and allowing existing tasks to complete.
+  - **`awaitTermination(long timeout, TimeUnit unit)`**: Blocks until all tasks complete after a shutdown request, the timeout occurs, or the current thread is interrupted.
+  - **`shutdownNow()`**: Attempts to stop all actively executing tasks, halts further task submissions, and returns a list of tasks awaiting execution.
+  - **`isShutdown()`**: Returns `true` if the `shutdown()` method has been called on the executor.
+  - **`isTerminated()`**: Returns `true` if all tasks have completed following shutdown.
+  - **`invokeAll(Collection<? extends Callable<T>> tasks)`**: Executes all tasks in the provided collection and waits for all to complete, returning a list of Futures representing the tasks.
+
+- **`Executors`**: A utility class for creating various types of thread pools.
+  - **`newFixedThreadPool(int n)`**: Creates a thread pool with a fixed number of threads (`n`), ideal for handling a fixed number of concurrent tasks.
+  - **`newCachedThreadPool()`**: Creates a thread pool that dynamically creates new threads as needed and reuses idle threads.
+  - **`newSingleThreadExecutor()`**: Creates a pool with a single worker thread to execute tasks sequentially.
+  - **`newScheduledThreadPool(int corePoolSize)`**: Creates a thread pool that can schedule commands to run after a given delay or periodically.
+  - **`newWorkStealingPool(int parallelism)`**: Creates a pool that maintains enough threads to support a given level of parallelism, ideal for ForkJoin tasks.
+
+### **`submit(Runnable task)`** returns `Future<?>`
+  - **`get()`**: Waits for the computation to complete and retrieves the result, blocking until the task is completed.
+  - **`get(long timeout, TimeUnit unit)`**: Waits for the computation to complete within the given timeout and retrieves the result if available; otherwise, throws a `TimeoutException`.
+  - **`cancel(boolean mayInterruptIfRunning)`**: Attempts to cancel the execution of the task if it's still running. If `mayInterruptIfRunning` is `true`, the task is interrupted if running.
+  - **`isCancelled()`**: Returns `true` if the task was canceled before it completed.
+  - **`isDone()`**: Returns `true` if the task has completed (either successfully, via cancellation, or due to an exception).
+
+### Example: Using `newFixedThreadPool`
+
+In this example, a thread pool of size 2 is created, and 5 tasks are submitted. Each task is executed by an available thread in the pool, optimizing performance.
+
 ```java
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class ThreadPoolExample {
     public static void main(String[] args) {
-        ExecutorService executor = Executors.newFixedThreadPool(2);
+      ExecutorService service = Executors.newFixedThreadPool(5);
+      for (int i = 0; i < 10; i++) {
+        int finalI = i;
+        Future<?> future = service.submit(() -> {
+          System.out.println(factorial(finalI));
+        });
+        System.out.println(future.isCancelled());
+      }
+      service.shutdown(); // does not wait for services to finish and continue main thread.
+      service.awaitTermination(2000, TimeUnit.MILLISECONDS); // to stop main thread to run
 
-        for (int i = 0; i < 5; i++) {
-            executor.submit(() -> {
-                System.out.println(Thread.currentThread().getName() + " is executing a task");
-            });
-        }
-
-        executor.shutdown();
+      System.out.println("Main method");
+    }
+    
+    private static long factorial(long n) {
+      try {
+        Thread.sleep(500);
+      } catch (InterruptedException e) {
+        throw new RuntimeException(e);
+      }
+      long result = 1;
+      for (int i = 1; i <= n; i++) {
+        result *= i;
+      }
+  
+      return n <= 0 ? 0 : result;
     }
 }
 ```
 ## CyclicBarrier
 CyclicBarrier allows a set of threads to wait for each other to reach a common point before continuing.
+
+### Key Methods
+
+- **`await()`**: Each thread calls this method to signal that it has reached the barrier. The thread waits until all threads have called `await()`, at which point they can all proceed.
+- **`reset()`**: Resets the barrier to its initial state, allowing it to be reused if needed.
+- **`getNumberWaiting()`**: Returns the number of threads currently waiting at the barrier.
+- **`isBroken()`**: Returns `true` if the barrier was broken due to a timeout or interruption.
 
 Example:
 ```java

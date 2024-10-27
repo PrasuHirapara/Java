@@ -16,6 +16,7 @@ Runnable r = () -> { System.out.println("Lambda expression"); };
 
 ### Rules:
 - A lambda expression can have zero or more parameters.
+- Variable used in lambda expression should be final or effectively final
 - The data type of parameters can be omitted as it is inferred from the context.
 - If there's a single parameter, you can omit the parentheses.
 - If the body contains a single statement, the curly braces and return keyword can be omitted.

@@ -1,4 +1,4 @@
-package OOPs.Encapsulation;
+package OOPs.Polymorphism;
 
 public class Square extends Shapes {
     @Override
