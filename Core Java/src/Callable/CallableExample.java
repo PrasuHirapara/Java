@@ -30,9 +30,11 @@ public class CallableExample {
             String result = future.get();  // blocking until result is available
             System.out.println("Result: " + result);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Exception: " + e.toString());
         } finally {
             executor.shutdown();
         }
+
+        System.out.println("Main method");
     }
 }
