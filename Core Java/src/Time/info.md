@@ -214,28 +214,88 @@ public class InstantExample {
         System.out.println(zonedDateTime);
     }
 }
-
 ```
 ---
-
 ## 5. `Duration`
-Represents a time-based amount of time, such as '5 seconds'.
+- Represents a time-based amount of time, such as '5 seconds'.
 
 ### Methods:
 - **`between(Temporal start, Temporal end)`**: Creates a `Duration` between two time points.  
   *Pattern:* `PTnHnMnS`  
   *Example:* `Duration.between(LocalTime.NOON, LocalTime.MIDNIGHT)` → `PT12H`
+```java
+package Time;
 
+import java.time.Duration;
+import java.time.Instant;
+import java.time.temporal.ChronoUnit;
+
+public class DurationExample {
+    public static void main(String[] args) {
+
+        Instant start = Instant.now();
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        Instant end = Instant.now();
+
+        Duration d1 = Duration.between(start, end);
+        System.out.println(d1);
+
+        Duration d2 = Duration.of(1, ChronoUnit.SECONDS);
+        System.out.println(d2);
+
+        if(d1.compareTo(d2) > 0){
+            System.out.println("d1 > d2");
+        }else{
+            System.out.println("d1 < d2");
+        }
+    }
+}
+```
 ---
 
 ## 6. `Period`
-Represents a date-based amount of time, such as '2 years, 3 months, and 4 days'.
-
+- Represents a date-based amount of time, such as '2 years, 3 months, and 4 days'.
+- 
 ### Methods:
 - **`between(LocalDate startDate, LocalDate endDate)`**: Creates a `Period` between two dates.  
   *Pattern:* `PnYnMnD`  
   *Example:* `Period.between(LocalDate.of(2020, 1, 1), LocalDate.of(2024, 1, 1))` → `P4Y`
+```java
+package Time;
 
+import java.time.Duration;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.temporal.ChronoUnit;
+
+public class PeriodExample {
+    public static void main(String[] args) {
+        LocalDate today = LocalDate.now();
+        LocalDate yesterday = LocalDate.of(2026, 3, 12);
+
+        Period p1 = Period.between(today, yesterday);
+        System.out.println(p1);
+        System.out.println(p1.getYears());
+        System.out.println(p1.getMonths());
+
+        Period p2 = Period.of(2024, 3, 13);
+
+        if(p1.equals(p2)){
+            System.out.println("Equals");
+        } else {
+            System.out.println("Not Equals");
+        }
+
+    }
+}
+```
 ---
 
 ## 7. `ZonedDateTime`
@@ -282,3 +342,47 @@ Provides a way to format and parse date-time objects.
 - **`ofPattern(String pattern)`**: Creates a formatter using the specified pattern.  
   *Pattern:* Custom based on input  
   *Example:* `DateTimeFormatter.ofPattern("yyyy-MM-dd").format(LocalDate.now())` → `2024-10-27`
+
+### Symbols: 
+- **`y`**: Year (`yyyy` - 4-digit, `yy` - 2-digit)
+- **`M`**: Month (`MM` - 2-digit, `MMM` - short name, `MMMM` - full name)
+- **`d`**: Day of Month (`dd` - 2-digit, `d` - single-digit)
+- **`E` or `e`**: Day of Week (`EEE` - short name, `EEEE` - full name)
+- **`a`**: AM/PM marker
+- **`H`**: Hour (0-23, `HH` - 2-digit)
+- **`h`**: Hour (1-12, `hh` - 2-digit)
+- **`m`**: Minute (`mm` - 2-digit)
+- **`s`**: Second (`ss` - 2-digit)
+- **`S`**: Fraction of Second (milliseconds)
+- **`z`**: Time Zone
+- **`Z`**: Offset from UTC (e.g., `+0000`)
+- **`X`**: ISO 8601 Time Zone (`X` - basic, `XX` - extended, `XXX` - full extended)
+
+```java
+package Time;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public class DateTimeFormatterExample {
+    public static void main(String[] args) {
+        LocalDate today = LocalDate.now();
+        System.out.println(today);
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("dd/MM-yyyy");
+
+//        date to string
+        String formattedDate = formatter.format(today);
+        System.out.println(formattedDate);
+
+        String formattedDate2 = formatter2.format(today);
+        System.out.println(formattedDate2);
+
+//        string to date
+//        LocalDate error = LocalDate.parse(formattedDate); // thous error
+        LocalDate today2 = LocalDate.parse(formattedDate, formatter);
+        System.out.println(today2);
+    }
+}
+```

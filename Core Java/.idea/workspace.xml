@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="414a0ab2-33ae-4c10-80d2-598b2fa50994" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Time/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Time/info.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +61,9 @@
     "Application.Comparator.Main.executor": "Run",
     "Application.CyclicBarrierExample.executor": "Run",
     "Application.DaemonThread.executor": "Run",
+    "Application.DateTimeFormatterExample.executor": "Run",
     "Application.Deadlock.executor": "Run",
+    "Application.DurationExample.executor": "Run",
     "Application.ExceptionHandling.Main.executor": "Run",
     "Application.InstantExample.executor": "Run",
     "Application.Labmda.Main.executor": "Run",
@@ -80,6 +81,7 @@
     "Application.OOPs.Inheritance.Main.executor": "Run",
     "Application.OOPs.Interface.Main.executor": "Run",
     "Application.OOPs.Package.Main.executor": "Run",
+    "Application.PeriodExample.executor": "Run",
     "Application.ReadWrite.executor": "Run",
     "Application.TableSync.executor": "Run",
     "Application.TestAnnotation.executor": "Run",
@@ -107,7 +109,33 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.InstantExample">
+  <component name="RunManager" selected="Application.DateTimeFormatterExample">
+    <configuration name="DateTimeFormatterExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Time.DateTimeFormatterExample" />
+      <module name="Core Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Time.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DurationExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Time.DurationExample" />
+      <module name="Core Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Time.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InstantExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Time.InstantExample" />
       <module name="Core Java" />
@@ -121,34 +149,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocalDateExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Time.LocalDateExample" />
-      <module name="Core Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Time.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LocalDateTimeExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Time.LocalDateTimeExample" />
-      <module name="Core Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Time.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LocalTimeExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Time.LocalTimeExample" />
+    <configuration name="PeriodExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Time.PeriodExample" />
       <module name="Core Java" />
       <extension name="coverage">
         <pattern>
@@ -175,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DateTimeFormatterExample" />
+        <item itemvalue="Application.PeriodExample" />
+        <item itemvalue="Application.DurationExample" />
         <item itemvalue="Application.InstantExample" />
         <item itemvalue="Application.ZonedDateTimeExample" />
-        <item itemvalue="Application.LocalDateTimeExample" />
-        <item itemvalue="Application.LocalTimeExample" />
-        <item itemvalue="Application.LocalDateExample" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +230,8 @@
       <workItem from="1729611263270" duration="3130000" />
       <workItem from="1729780651131" duration="6152000" />
       <workItem from="1729789860349" duration="13629000" />
-      <workItem from="1730041253211" duration="3283000" />
+      <workItem from="1730041253211" duration="3438000" />
+      <workItem from="1730124137300" duration="1443000" />
     </task>
     <servers />
   </component>
