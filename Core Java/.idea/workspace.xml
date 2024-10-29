@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="414a0ab2-33ae-4c10-80d2-598b2fa50994" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Callable/CallableExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Callable/CallableExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Callable/CallableExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Callable/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Future/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Future/info.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +68,7 @@
     "Application.Deadlock.executor": "Run",
     "Application.DurationExample.executor": "Run",
     "Application.ExceptionHandling.Main.executor": "Run",
+    "Application.Future.Main.executor": "Run",
     "Application.InstantExample.executor": "Run",
     "Application.Labmda.Main.executor": "Run",
     "Application.LocalDateExample.executor": "Run",
@@ -109,20 +113,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.CallableExample">
-    <configuration name="CallableExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Callable.CallableExample" />
-      <module name="Core Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Callable.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Future.Main">
     <configuration name="DateTimeFormatterExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Time.DateTimeFormatterExample" />
       <module name="Core Java" />
@@ -149,12 +140,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InstantExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Time.InstantExample" />
+    <configuration name="Future.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Future.Main" />
       <module name="Core Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Time.*" />
+          <option name="PATTERN" value="Future.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Callable.Main" />
+      <module name="Core Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Callable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CallableExample" />
+        <item itemvalue="Application.Future.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.DateTimeFormatterExample" />
         <item itemvalue="Application.PeriodExample" />
         <item itemvalue="Application.DurationExample" />
-        <item itemvalue="Application.InstantExample" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +235,8 @@
       <workItem from="1729780651131" duration="6152000" />
       <workItem from="1729789860349" duration="13629000" />
       <workItem from="1730041253211" duration="3438000" />
-      <workItem from="1730124137300" duration="4826000" />
+      <workItem from="1730124137300" duration="5004000" />
+      <workItem from="1730175533337" duration="1034000" />
     </task>
     <servers />
   </component>
