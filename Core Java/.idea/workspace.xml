@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="414a0ab2-33ae-4c10-80d2-598b2fa50994" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Callable/CallableExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Callable/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Future/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Future/info.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Networking/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Networking/info.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,12 +69,15 @@
     "Application.Future.Main.executor": "Run",
     "Application.InstantExample.executor": "Run",
     "Application.Labmda.Main.executor": "Run",
+    "Application.ListNetworkInterfaces.executor": "Run",
     "Application.LocalDateExample.executor": "Run",
     "Application.LocalDateTimeExample.executor": "Run",
     "Application.LocalTimeExample.executor": "Run",
     "Application.Locking.executor": "Run",
+    "Application.MAC_Address.executor": "Run",
     "Application.Main (1).executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.Networking.MAC_Address.executor": "Run",
     "Application.OOPs.Abstraction.Main.executor": "Run",
     "Application.OOPs.Class.Main.executor": "Run",
     "Application.OOPs.CollectionFrameWork.Main.executor": "Run",
@@ -85,6 +86,7 @@
     "Application.OOPs.Inheritance.Main.executor": "Run",
     "Application.OOPs.Interface.Main.executor": "Run",
     "Application.OOPs.Package.Main.executor": "Run",
+    "Application.Optional.Main.executor": "Run",
     "Application.PeriodExample.executor": "Run",
     "Application.ReadWrite.executor": "Run",
     "Application.TableSync.executor": "Run",
@@ -113,39 +115,26 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Future.Main">
-    <configuration name="DateTimeFormatterExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Time.DateTimeFormatterExample" />
-      <module name="Core Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Time.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DurationExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Time.DurationExample" />
-      <module name="Core Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Time.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Optional.Main">
     <configuration name="Future.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Future.Main" />
       <module name="Core Java" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Future.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MAC_Address" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RegEx.MAC_Address" />
+      <module name="Core Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RegEx.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -166,12 +155,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PeriodExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Time.PeriodExample" />
+    <configuration name="Networking.MAC_Address" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Networking.MAC_Address" />
       <module name="Core Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Time.*" />
+          <option name="PATTERN" value="Networking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Optional.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Optional.Main" />
+      <module name="Core Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Optional.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -181,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Optional.Main" />
+        <item itemvalue="Application.Networking.MAC_Address" />
+        <item itemvalue="Application.MAC_Address" />
         <item itemvalue="Application.Future.Main" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.DateTimeFormatterExample" />
-        <item itemvalue="Application.PeriodExample" />
-        <item itemvalue="Application.DurationExample" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +238,9 @@
       <workItem from="1729789860349" duration="13629000" />
       <workItem from="1730041253211" duration="3438000" />
       <workItem from="1730124137300" duration="5004000" />
-      <workItem from="1730175533337" duration="1034000" />
+      <workItem from="1730175533337" duration="7560000" />
+      <workItem from="1730196751931" duration="755000" />
+      <workItem from="1730437218326" duration="1382000" />
     </task>
     <servers />
   </component>
