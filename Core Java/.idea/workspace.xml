@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="414a0ab2-33ae-4c10-80d2-598b2fa50994" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Networking/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Networking/info.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StramAPI/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/StramAPI/info.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Threading/CyclicBarrierExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Threading/CyclicBarrierExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Threading/DaemonThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Threading/DaemonThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,67 +57,80 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Annotation.Main.executor": "Run",
-    "Application.CallableExample.executor": "Run",
-    "Application.Comparator.Main.executor": "Run",
-    "Application.CyclicBarrierExample.executor": "Run",
-    "Application.DaemonThread.executor": "Run",
-    "Application.DateTimeFormatterExample.executor": "Run",
-    "Application.Deadlock.executor": "Run",
-    "Application.DurationExample.executor": "Run",
-    "Application.ExceptionHandling.Main.executor": "Run",
-    "Application.Future.Main.executor": "Run",
-    "Application.InstantExample.executor": "Run",
-    "Application.Labmda.Main.executor": "Run",
-    "Application.ListNetworkInterfaces.executor": "Run",
-    "Application.LocalDateExample.executor": "Run",
-    "Application.LocalDateTimeExample.executor": "Run",
-    "Application.LocalTimeExample.executor": "Run",
-    "Application.Locking.executor": "Run",
-    "Application.MAC_Address.executor": "Run",
-    "Application.Main (1).executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.Networking.MAC_Address.executor": "Run",
-    "Application.OOPs.Abstraction.Main.executor": "Run",
-    "Application.OOPs.Class.Main.executor": "Run",
-    "Application.OOPs.CollectionFrameWork.Main.executor": "Run",
-    "Application.OOPs.Encapsulation.Main.executor": "Run",
-    "Application.OOPs.Generics.Main.executor": "Run",
-    "Application.OOPs.Inheritance.Main.executor": "Run",
-    "Application.OOPs.Interface.Main.executor": "Run",
-    "Application.OOPs.Package.Main.executor": "Run",
-    "Application.Optional.Main.executor": "Run",
-    "Application.PeriodExample.executor": "Run",
-    "Application.ReadWrite.executor": "Run",
-    "Application.TableSync.executor": "Run",
-    "Application.TestAnnotation.executor": "Run",
-    "Application.ThreadCommunication.executor": "Run",
-    "Application.ThreadPooling.executor": "Run",
-    "Application.Threading.Main.executor": "Run",
-    "Application.ZonedDateTimeExample.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "main",
-    "ignore.preview.features.used": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Dell/Desktop/Projects/Java/Core Java",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/Dell/Desktop/Projects/Java/Core Java/src/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Annotation.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CallableExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Comparator.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CyclicBarrierExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DaemonThread.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DateTimeFormatterExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Deadlock.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DurationExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExceptionHandling.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Future.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.InstantExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Labmda.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ListNetworkInterfaces.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LocalDateExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LocalDateTimeExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LocalTimeExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Locking.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MAC_Address.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Networking.MAC_Address.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.Abstraction.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.Class.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.CollectionFrameWork.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.Encapsulation.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.Generics.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.Inheritance.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.Interface.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.Package.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Optional.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PeriodExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReadWrite.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TableSync.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestAnnotation.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ThreadCommunication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ThreadPooling.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Threading.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ZonedDateTimeExample.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dell/Desktop/Projects/Java/Core Java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Dell/Desktop/Projects/Java/Core Java/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.Optional.Main">
+}</component>
+  <component name="RunManager" selected="Application.CyclicBarrierExample">
+    <configuration name="CyclicBarrierExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Threading.CyclicBarrierExample" />
+      <module name="Core Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Threading.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Future.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Future.Main" />
       <module name="Core Java" />
@@ -135,19 +150,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="RegEx.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Callable.Main" />
-      <module name="Core Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Callable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -183,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CyclicBarrierExample" />
         <item itemvalue="Application.Optional.Main" />
         <item itemvalue="Application.Networking.MAC_Address" />
         <item itemvalue="Application.MAC_Address" />
         <item itemvalue="Application.Future.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +242,8 @@
       <workItem from="1730124137300" duration="5004000" />
       <workItem from="1730175533337" duration="7560000" />
       <workItem from="1730196751931" duration="755000" />
-      <workItem from="1730437218326" duration="1382000" />
+      <workItem from="1730437218326" duration="1886000" />
+      <workItem from="1730467804200" duration="36000" />
     </task>
     <servers />
   </component>

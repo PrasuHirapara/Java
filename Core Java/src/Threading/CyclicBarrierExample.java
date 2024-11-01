@@ -21,5 +21,7 @@ public class CyclicBarrierExample {
         new Thread(task, "Thread 1").start();
         new Thread(task, "Thread 2").start();
         new Thread(task, "Thread 3").start();
+
+        System.out.println("Main thread won't wait for other thread to join barrier.");
     }
 }

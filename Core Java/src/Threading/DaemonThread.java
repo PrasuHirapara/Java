@@ -17,6 +17,7 @@ public class DaemonThread extends Thread {
 //        if main thread is terminated daemon will be terminated automatically.
         dt.setDaemon(true);
         dt.start();
+
         System.out.println("Main Done");
     }
 }
