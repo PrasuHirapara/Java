@@ -1,8 +1,13 @@
 package Serialization;
 
+import java.io.Serial;
 import java.io.Serializable;
 
 public class User implements Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L; // Added serialVersionUID
+
     private String name;
     private String password;
     private static int total = 0;

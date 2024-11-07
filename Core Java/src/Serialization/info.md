@@ -14,6 +14,13 @@ Serialization is useful when you want to persist the state of an object, such as
 4. **Serializable Hierarchy**: If a superclass is not serializable, only the serializable subclass fields are saved.
 5. **Custom Serialization**: Implement `writeObject` and `readObject` methods for custom serialization logic.
 
+## `serialVersionUID`
+It is a unique identifier for each Serializable class. It is used to ensure that a deserialized object matches the version of the class. If a class does not explicitly define a `serialVersionUID`, the Java runtime generates one based on the class's structure. However, it is recommended to declare `serialVersionUID` explicitly, especially when evolving a class, to prevent `InvalidClassException` during deserialization.
+
+## Using `.ser` foramte
+- Readability and Convention: Using .ser makes it clear that the file contains serialized data. This helps developers recognize that they need to deserialize the content before use, especially if multiple types of files are stored in the same location.
+- Organization: It separates serialized files from other data types, making it easier to organize and manage files.
+- 
 ## Example Code
 
 ### User Class
