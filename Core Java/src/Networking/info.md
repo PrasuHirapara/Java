@@ -1,4 +1,3 @@
-
 # Networking
 Java provides several classes and interfaces to support network programming. Network programming in Java allows applications to communicate over a network, sharing resources and data. Key concepts in networking include **port numbers**, **MAC addresses**, **IP addresses**, **protocols (TCP/UDP)**, and **client-server communication**.
 
