@@ -173,7 +173,6 @@ public class URLExample {
 ```
 
 ## Client-Server Communication Example
-
 ### Server Code
 ```java
 import java.io.*;
