@@ -13,6 +13,28 @@
       }
   }
   ```
+### Or Configure `web.xml`
+- Instead of using annotations, you can define the mapping in the web.xml file
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+  <servlet>
+    <servlet-name>SumOfNumServlet</servlet-name>
+    <servlet-class>SumOfNum</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SumOfNumServlet</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+
+</web-app>
+
+```
 
 ## 2. `@WebFilter`
 - **Definition**: Declares a filter that intercepts requests or responses for specified URLs or Servlets. Only applied to classes.

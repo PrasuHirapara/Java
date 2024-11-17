@@ -5,8 +5,10 @@
   <title>JSP - Hello World</title>
 </head>
 <body>
-<h1><%= "Hello World!" %></h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+  <form action="add">
+    Enter 1st Number: <input type="number" name="num1">
+    Enter 2nd Number: <input type="number" name="num2">
+    <input type="submit">
+  </form>
 </body>
 </html>
