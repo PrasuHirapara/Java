@@ -25,7 +25,7 @@
 
   <servlet>
     <servlet-name>SumOfNumServlet</servlet-name>
-    <servlet-class>SumOfNum</servlet-class>
+    <servlet-class>Servlet.SumOfNum</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>SumOfNumServlet</servlet-name>

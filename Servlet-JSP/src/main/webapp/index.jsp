@@ -2,13 +2,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JSP - Hello World</title>
+  <title>JSP</title>
 </head>
 <body>
-  <form action="add">
-    Enter 1st Number: <input type="number" name="num1">
-    Enter 2nd Number: <input type="number" name="num2">
-    <input type="submit">
-  </form>
+  <a href="SumOfNum.jsp">1) Servlet Basics: Sum of Number</a>
+  <br>
+  <a href="SquareOfNum.jsp">2) Servlet Communication: Square of Number</a>
+  <br>
+  <a href=""> </a>
+  <br>
+  <a href=""> </a>
+  <br>
+  <a href=""> </a>
+  <br>
+  <a href=""> </a>
 </body>
 </html>
