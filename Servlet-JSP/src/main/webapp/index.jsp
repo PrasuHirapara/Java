@@ -23,7 +23,7 @@
     <br>
   <div><a href="${pageContext.request.contextPath}/details">E) ServletContext and ServletConfig: Details </a></div>
     <br>
-  <div><a href="${pageContext.request.contextPath}/details">F) Filter  </a></div>
+  <div><a href="${pageContext.request.contextPath}/home">F) Filter: HomePage </a></div>
     <br>
   <h1>JSP Topics</h1>
     <br>
