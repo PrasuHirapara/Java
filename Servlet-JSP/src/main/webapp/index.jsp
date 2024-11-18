@@ -5,16 +5,16 @@
   <title>JSP</title>
 </head>
 <body>
-  <a href="SumOfNum.jsp">1) Servlet Basics: Sum of Number</a>
-  <br>
-  <a href="SquareOfNum.jsp">2) Servlet Communication: Square of Number</a>
-  <br>
-  <a href=""> </a>
-  <br>
-  <a href=""> </a>
-  <br>
-  <a href=""> </a>
-  <br>
-  <a href=""> </a>
+  <div><a href="A_SumOfNum.jsp">A) Servlet Basics: Sum of Number</a></div>
+    <br>
+  <div><a href="B_SquareOfNum.jsp">B) Servlet Communication: Square of Number</a></div>
+    <br>
+  <div><a href="C_TableOfNum.jsp">C) Session Management: Table of Number</a></div>
+    <br>
+  <div><a href="D_CheckPrime.jsp">D) Cookie Management: Check Prime </a></div>
+    <br>
+  <div><a href="${pageContext.request.contextPath}/details">E) ServletContext and ServletConfig: Details </a></div>
+    <br>
+  <div><a href=""> </a></div>
 </body>
 </html>

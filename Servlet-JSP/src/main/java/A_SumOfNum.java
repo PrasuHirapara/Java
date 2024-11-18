@@ -5,7 +5,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 
 //@WebServlet("/sumOfNum") // configured in web.xml
-public class SumOfNum extends HttpServlet {
+public class A_SumOfNum extends HttpServlet {
 
 //    if the req is of GET then url -> http://localhost:8080/Servlet-JSP/add?num1=123&num2=456
 //    if the req is of POST then url -> http://localhost:8080/Servlet-JSP/add
