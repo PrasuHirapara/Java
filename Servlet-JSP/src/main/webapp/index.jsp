@@ -5,6 +5,7 @@
   <title>JSP</title>
 </head>
 <body>
+  <h1>Servlet Topics</h1>
   <div><a href="A_SumOfNum.jsp">A) Servlet Basics: Sum of Number</a></div>
     <br>
   <div><a href="B_SquareOfNum.jsp">B) Servlet Communication: Square of Number</a></div>
@@ -15,6 +16,8 @@
     <br>
   <div><a href="${pageContext.request.contextPath}/details">E) ServletContext and ServletConfig: Details </a></div>
     <br>
-  <div><a href=""> </a></div>
+  <h1>JSP Topics</h1>
+    <br>
+  <div><a href="a_Basics.jsp">a) JSP Basics: Basics</a></div>
 </body>
 </html>

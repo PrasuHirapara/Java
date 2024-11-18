@@ -3,6 +3,10 @@
 JavaServer Pages (JSP) is a Java technology that simplifies web application development by allowing Java code to be embedded in HTML pages.
 This approach enables dynamic content generation and easy HTML-Java integration, making JSP well-suited for creating the view layer in Java-based applications.
 
+- `JSP` provides all type of implicit objects.
+- `JSP` -> `Servlet` by Tomcat server.
+- Ex: `Demo.jsp` -> `Demo_jsp.java` via Tomcat.
+
 ## Key Features of JSP
 - **Simplified Java Embedding**: JSP enables dynamic content without extensive Java coding, improving readability.
 - **Separation of Concerns**: By focusing on the view layer, JSP separates presentation from business logic.
@@ -33,44 +37,23 @@ The JSP lifecycle is managed by the JSP container and includes several phases, f
 ### JSP Lifecycle Diagram
 ![JSP Lifecycle Diagram](https://media.geeksforgeeks.org/wp-content/uploads/20230315174153/Untitledm.png)
 
-## JSP Syntax and Structure
+## JSP Tags
 
 The JSP syntax integrates HTML with embedded Java code. Typical JSP pages include:
 
 1. **Directives**: Configuration settings.
     - Syntax: `<%@ page attribute="value" %>`
+    - Example: `<%@ page import="java.util.List" %>`
+    - Example: `<%@ include file="header.jsp" %>`
+    - Example: `<%@ taglib uri="http://example.com/mytags" prefix="ex" %>`
 
-2. **Scripting Elements**: Java code embedded within HTML.
-    - Declarations: `<%! int count = 0; %>`
-    - Scriptlets: `<% count++; %>`
-    - Expressions: `<%= count %>`
-
-3. **Template Data**: Static HTML content.
-
-## JSP Directives
-
-Directives provide metadata and configuration details for the JSP page.
-
-1. **Page Directive**: Sets page-level attributes like `import`, `contentType`, and `session`.
-    - Syntax: `<%@ page import="java.util.List" %>`
-
-2. **Include Directive**: Includes content from external files at translation time.
-    - Syntax: `<%@ include file="header.jsp" %>`
-
-3. **Taglib Directive**: Declares custom tag libraries to reuse common tags.
-    - Syntax: `<%@ taglib uri="http://example.com/mytags" prefix="ex" %>`
-
-## JSP Scripting Elements
-
-1. **Declarations**: Declare variables and methods that are accessible throughout the JSP page.
-    - Syntax: `<%! int counter = 0; %>`
-
-2. **Scriptlets**: Execute Java code within the page.
-    - Syntax: `<% counter++; %>`
-
-3. **Expressions**: Output the result of a Java expression directly to the response.
-    - Syntax: `<%= counter %>`
-
+2. **Declarations**: This Code will be available for `class declaration` section and outside `service` method i.e. `varialbes`, `methods`, `inner class`. 
+   - Example: `<%! int count = 0; %>`
+3. **Scriptlets**: This code will be available for `service` method section. 
+   - Example: `<% count++; %>`
+4. **Expressions**: This will be inserted into `out.println()` of `PrintWritter` class.
+   - Example: `<%= count %>`
+   
 ## Template Data and Text Content
 
 Template data includes static HTML and text content, forming the primary structure and layout of the web page. This data is sent directly to the client’s browser without processing, providing performance benefits. Common types of template data include:
