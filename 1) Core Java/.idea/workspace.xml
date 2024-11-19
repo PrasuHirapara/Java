@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="414a0ab2-33ae-4c10-80d2-598b2fa50994" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;PrasuHirapara&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/PrasuHirapara/Java.git&quot;,
+    &quot;accountId&quot;: &quot;5ae8cd08-7800-410a-94c3-8298f4308330&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Threading/Main.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2nUMpGezxkNQoQViw3UkQ8zWGQk" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Annotation.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CallableExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Comparator.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Creation.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CyclicBarrierExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DaemonThread.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DateTimeFormatterExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DeSerialize.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Deadlock.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DistinctExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DurationExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExceptionHandling.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FilterMethod.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Future.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.InstantExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Labmda.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ListNetworkInterfaces.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LocalDateExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LocalDateTimeExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LocalTimeExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Locking.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MAC_Address.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MapExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Networking.MAC_Address.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.Abstraction.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.Class.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.CollectionFrameWork.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.Encapsulation.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.Generics.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.Inheritance.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.Interface.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.Package.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Operations.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Optional.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ParallelStreamExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PeriodExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReadWrite.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Serialization.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Serialize.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SortedExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TableSync.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestAnnotation.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ThreadCommunication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ThreadPooling.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Threading.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ZonedDateTimeExample.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dell/Desktop/Projects/Java/Core Java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Dell/Desktop/Projects/Java/Core Java/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\Desktop\Projects\Java\Core Java\src\Serialization" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Annotation.Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Annotation.Main" />
+      <module name="Core Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Annotation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Creation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StreamAPI.Creation" />
+      <module name="Core Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StreamAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilterMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StreamAPI.FilterMethod" />
+      <module name="Core Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StreamAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Reflection.Main" />
+      <module name="Core Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Reflection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortedExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StreamAPI.SortedExample" />
+      <module name="Core Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StreamAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Creation" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.SortedExample" />
+        <item itemvalue="Application.FilterMethod" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="414a0ab2-33ae-4c10-80d2-598b2fa50994" name="Changes" comment="" />
+      <created>1729023382188</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729023382188</updated>
+      <workItem from="1729023383334" duration="21000" />
+      <workItem from="1729023465158" duration="4000" />
+      <workItem from="1729023510393" duration="12000" />
+      <workItem from="1729023585166" duration="92000" />
+      <workItem from="1729024131707" duration="448000" />
+      <workItem from="1729086979890" duration="260000" />
+      <workItem from="1729101026468" duration="8371000" />
+      <workItem from="1729110425717" duration="254000" />
+      <workItem from="1729110696093" duration="1091000" />
+      <workItem from="1729111860276" duration="198000" />
+      <workItem from="1729112594413" duration="137000" />
+      <workItem from="1729112744657" duration="532000" />
+      <workItem from="1729166465303" duration="3748000" />
+      <workItem from="1729190974290" duration="4921000" />
+      <workItem from="1729222300539" duration="2869000" />
+      <workItem from="1729239168636" duration="1545000" />
+      <workItem from="1729242324513" duration="1467000" />
+      <workItem from="1729264534385" duration="912000" />
+      <workItem from="1729265470781" duration="13860000" />
+      <workItem from="1729336947135" duration="8130000" />
+      <workItem from="1729350532176" duration="6234000" />
+      <workItem from="1729357459176" duration="4159000" />
+      <workItem from="1729398117346" duration="65000" />
+      <workItem from="1729444503504" duration="6408000" />
+      <workItem from="1729485703650" duration="543000" />
+      <workItem from="1729528041352" duration="7116000" />
+      <workItem from="1729611263270" duration="3130000" />
+      <workItem from="1729780651131" duration="6152000" />
+      <workItem from="1729789860349" duration="13629000" />
+      <workItem from="1730041253211" duration="3438000" />
+      <workItem from="1730124137300" duration="5004000" />
+      <workItem from="1730175533337" duration="7560000" />
+      <workItem from="1730196751931" duration="755000" />
+      <workItem from="1730437218326" duration="1886000" />
+      <workItem from="1730467804200" duration="36000" />
+      <workItem from="1730478255365" duration="404000" />
+      <workItem from="1730539404393" duration="2736000" />
+      <workItem from="1730725177124" duration="2457000" />
+      <workItem from="1730779867513" duration="3000" />
+      <workItem from="1730898906563" duration="2122000" />
+      <workItem from="1730953699435" duration="6144000" />
+      <workItem from="1730960955024" duration="854000" />
+      <workItem from="1730962119414" duration="506000" />
+      <workItem from="1730966321570" duration="1358000" />
+      <workItem from="1730986645269" duration="950000" />
+      <workItem from="1731152515360" duration="103000" />
+      <workItem from="1731416561510" duration="649000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassCastException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Core_Java$Main.ic" NAME="Main Coverage Results" MODIFIED="1729357235596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>OOPs.Generics.*</FILTER>
+    </SUITE>
+  </component>
+</project>
