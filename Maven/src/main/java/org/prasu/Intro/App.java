@@ -1,4 +1,4 @@
-package org.prasu;
+package org.prasu.Intro;
 
 public class App {
     public static void main( String[] args ) {
