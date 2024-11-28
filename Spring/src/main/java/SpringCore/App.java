@@ -1,4 +1,4 @@
-package org.prasu;
+package SpringCore;
 
 
 public class App {
