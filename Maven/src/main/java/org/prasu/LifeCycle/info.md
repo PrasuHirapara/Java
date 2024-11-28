@@ -113,7 +113,7 @@ The **Site Lifecycle** generates project documentation and reports, such as Java
 
 ### Deploy Phase Rules
 
-The **Deploy Phase** uploads the packaged project to a remote repository, making it accessible to other developers or systems.
+The **Deployment Phase** uploads the packaged project to a remote repository, making it accessible to other developers or systems.
 
 #### Rules for Deployment:
 1. **Configure Remote Repository**: Ensure the `<distributionManagement>` section is properly configured in the `pom.xml` file, specifying the repository URL and credentials.
