@@ -14,6 +14,7 @@ Dependencies are added to the Maven `pom.xml` file. For example:
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
         <version>3.12.0</version>
+        <scope>provided</scope>
     </dependency>
 </dependencies>
 ```

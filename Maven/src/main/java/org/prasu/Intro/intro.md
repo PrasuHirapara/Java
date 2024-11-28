@@ -48,36 +48,6 @@ Example POM snippet:
 </project>
 ```
 
-## Maven Build Lifecycle
-
-Maven operates using three distinct build lifecycles, each consisting of multiple phases:
-
-### 1. Default Lifecycle
-This is the primary lifecycle that handles the complete build and deployment of the project. Key phases include:
-- **validate:** Ensures the project is structured correctly.
-- **compile:** Compiles the project's source code.
-- **test:** Executes unit tests using a testing framework.
-- **package:** Bundles the compiled code into a distributable format like a JAR or WAR.
-- **install:** Installs the package into the local repository for use in other projects.
-- **deploy:** Uploads the package to a remote repository for sharing with others.
-
-### 2. Clean Lifecycle
-This lifecycle focuses on removing build artifacts to prepare for a clean build. Phases include:
-- **pre-clean:** Performs actions before the cleaning process begins.
-- **clean:** Deletes the output of previous builds.
-- **post-clean:** Performs actions after cleaning.
-
-### 3. Site Lifecycle
-This lifecycle is responsible for generating and deploying project documentation. Key phases include:
-- **pre-site:** Prepares for site generation.
-- **site:** Generates the project's site documentation.
-- **post-site:** Finalizes the site generation process.
-- **site-deploy:** Deploys the generated documentation to a web server.
-
-To execute a specific phase, use the command:
-```bash
-mvn <phase>
-```
 
 ## Maven Profiles
 
