@@ -14,6 +14,47 @@ Spring is an open-source application framework for Java. It provides comprehensi
 4. **Comprehensive Support**: For database access, messaging, transaction management, and more.
 5. **Wide Adoption**: Large community and extensive documentation.
 
+## Spring Theory
+
+Spring Theory refers to the foundational principles that underpin the Spring Framework. These principles guide the design of Spring applications, emphasizing modularity, flexibility, and maintainability.
+
+### Core Theoretical Concepts
+
+1. **Dependency Injection (DI):**
+   - **Definition:** A design pattern where the framework handles the instantiation and management of dependencies (objects) that a class needs.
+   - **Purpose:** Promotes loose coupling between components, making the application easier to test and maintain.
+   - **Example:** A service class can have its dependencies injected via constructor or setter methods rather than creating objects manually.
+
+2. **Aspect-Oriented Programming (AOP):**
+   - **Definition:** A programming paradigm that allows the separation of cross-cutting concerns like logging, security, and transaction management.
+   - **Purpose:** Enhances modularity by enabling these concerns to be implemented independently of the application's core logic.
+   - **Example:** Using Spring's `@Aspect` annotation to define behaviors that can be applied across multiple classes.
+
+3. **POJO-Based Development:**
+   - **Definition:** Encourages the use of Plain Old Java Objects (POJOs) instead of specialized framework classes.
+   - **Purpose:** Ensures code simplicity and enables seamless testing and integration with non-Spring components.
+   - **Example:** A simple Java class annotated with Spring annotations like `@Component` or `@Service`.
+
+4. **Inversion of Control (IoC):**
+   - **Definition:** A principle where the control of object creation and management is transferred from the application code to the Spring IoC container.
+   - **Purpose:** Improves the separation of concerns and decouples application components.
+   - **Example:** The IoC container creates beans and wires them together using configurations or annotations.
+
+5. **Spring's Layered Architecture:**
+   - **Core Container:** Manages bean definitions and lifecycle.
+   - **Data Access/Integration Layer:** Provides APIs for database operations and transactions.
+   - **Web Layer:** Manages HTTP requests and responses via Spring MVC.
+   - **Security Layer:** Handles authentication and authorization.
+
+6. **Modularity and Lightweight Design:**
+   - **Definition:** Applications can include only the necessary Spring modules, ensuring a lean and efficient system.
+   - **Purpose:** Reduces resource overhead and complexity.
+
+7. **Configuration Approaches:**
+   - XML-based configuration.
+   - Annotation-based configuration using `@Configuration`, `@Bean`, and other annotations.
+   - Java-based configuration with Spring Boot and the Spring Framework.
+
 ## Spring Architecture
 
 ![Spring Architecture](https://www.tutorialspoint.com/spring/images/spring_architecture.png)
