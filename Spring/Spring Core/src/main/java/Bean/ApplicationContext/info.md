@@ -3,7 +3,7 @@
 ## Introduction
 ApplicationContext is a central interface in the Spring Framework, responsible for providing configuration information
 to the Spring application. It extends the BeanFactory interface and offers additional features such as AOP integration,
-message resource handling, and event propagation, making it a powerful and flexible container for managing Spring beans.
+message resource handling, and event propagation, making it a po<constructor-arg ref=""/>e container for managing Spring beans.
 
 ## Features of ApplicationContext
 
@@ -55,6 +55,7 @@ public class App {
 }
 
 ```
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -63,6 +64,8 @@ public class App {
 
    <bean id="doctor" class="IoC.Doctor">
       <property name="qualification" value="Developer" />
+      <property name="name" value="Prasu" />
+      <constructor-arg name="nurse" ref="nurse" />
    </bean>
    <bean id="nurse" class="IoC.Nurse"></bean>
 
