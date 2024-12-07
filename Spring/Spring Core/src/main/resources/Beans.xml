@@ -11,7 +11,7 @@
         <property name="name" value="Prasu" />
         <constructor-arg name="nurse" ref="nurse" />
     </bean>
-    <bean id="nurse" class="IoC.Nurse"></bean>
+    <bean id="nurse" class="IoC.Nurse" scope="prototype"></bean>
 
     <!-- Annotations -->
     <context:component-scan base-package="IoC"/>

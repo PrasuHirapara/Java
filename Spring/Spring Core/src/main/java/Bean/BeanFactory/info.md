@@ -1,9 +1,30 @@
 # BeanFactory
-
-## Introduction
 BeanFactory is the foundational interface in the Spring Framework for managing the lifecycle of beans.
 It provides the basic functionalities for bean instantiation, configuration, and lifecycle management.
 While it is lightweight and suitable for simple applications, it lacks some advanced features offered by ApplicationContext.
+
+## Example
+```java
+package Bean.BeanFactory;
+
+import IoC.Doctor;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class App {
+    public static void main(String[] args) {
+        BeanFactory beanFactory = new ClassPathXmlApplicationContext("Beans.xml");
+
+        System.out.println(beanFactory.containsBean("doctor"));
+        System.out.println(beanFactory.isSingleton("doctor"));
+
+        Doctor staff = (Doctor) beanFactory.getBean("doctor");
+        staff.assist();
+        System.out.println(staff.getName());
+        System.out.println(staff.getQualification());
+    }
+}
+```
 
 ## Features of BeanFactory
 

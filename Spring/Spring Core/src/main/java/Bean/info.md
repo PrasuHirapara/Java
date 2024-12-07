@@ -8,11 +8,33 @@ Beans form the backbone of any Spring-based application and represent the applic
 A bean is a Java object managed by the Spring container. Beans are created, configured, and managed within the container and are defined in Spring configuration files (XML, Java-based, or annotations).
 
 ### Bean Scope
+- Using `@Scope(scopeName = "")` annotation.
 1. **Singleton** (Default): Only one instance of the bean is created per Spring container.
 2. **Prototype**: A new instance is created every time the bean is requested.
 3. **Request**: One instance per HTTP request (used in web applications).
 4. **Session**: One instance per HTTP session (used in web applications).
 5. **Global Session**: Scoped to a global HTTP session.
+
+- Example
+```xml
+    <bean id="nurse" class="IoC.Nurse" scope="prototype" />
+```
+```java
+package IoC;
+
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component
+@Scope(scopeName = "prototype")
+public class Nurse implements Staff{
+
+    @Override
+    public void assist() {
+        System.out.println("Nurse is assisting");
+    }
+}
+``` 
 
 ### Bean Lifecycle
 The lifecycle of a bean in Spring involves several phases, from creation to destruction. Below is an overview of the lifecycle:
@@ -24,6 +46,27 @@ The lifecycle of a bean in Spring involves several phases, from creation to dest
 6. Post-initialization: BeanPostProcessor’s `postProcessAfterInitialization()` is called.
 7. Ready to Use: The bean is ready for use by the application.
 8. Destruction: The container calls the bean’s custom destroy method when the context is closed.
+
+### Common methods(in both `ApplicatoinContext` and `BeanFactory`)
+## Important Spring `Bean` Methods
+
+- #### `containsBean(String name)`
+Checks if the bean with the specified name is present in the application context.
+
+- #### `getBean(String name)`
+Returns the bean instance registered with the specified name.
+
+- #### `getBean(Class<T> requiredType)`
+Returns the bean instance of the specified type.
+
+- #### `getBeanDefinitionNames()`
+Returns the names of all the bean definitions present in the application context.
+
+- #### `getType(String name)`
+Returns the type of the bean with the specified name.
+
+- #### `isSingleton(String name)`
+Determines whether the bean with the specified name is a singleton.
 
 ### Configuration Methods
 Beans can be configured in Spring using:
@@ -111,7 +154,6 @@ package IoC;
 
 import org.springframework.stereotype.Component;
 
-@Component
 public class Doctor implements Staff{
     private String qualification;
     private String name;
