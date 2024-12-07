@@ -5,7 +5,7 @@ In the Spring Framework, a **Bean** is an object that is instantiated, assembled
 Beans form the backbone of any Spring-based application and represent the application objects.
 
 ### What is a Bean?
-A bean is a Java object that is managed by the Spring container. Beans are created, configured, and managed within the container and are defined in Spring configuration files (XML, Java-based, or annotations).
+A bean is a Java object managed by the Spring container. Beans are created, configured, and managed within the container and are defined in Spring configuration files (XML, Java-based, or annotations).
 
 ### Bean Scope
 1. **Singleton** (Default): Only one instance of the bean is created per Spring container.
@@ -72,7 +72,7 @@ Spring provides support for validating bean properties using the Java Bean Valid
 
 1. **Add Spring Dependency**: Include Spring dependencies in your project (e.g., Maven or Gradle).
 2. **Create a Configuration**:
-    - For XML: Define the bean in `applicationContext.xml`.
+    - For XML: Define the bean in `/main/resources/Bean.xml`.
     - For Java: Use a configuration class with `@Configuration` and `@Bean`.
     - For Annotations: Annotate the bean class with `@Component`.
 3. **Initialize Container**: Load the configuration into the IoC container.

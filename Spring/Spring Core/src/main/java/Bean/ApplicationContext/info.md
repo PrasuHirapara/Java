@@ -28,12 +28,46 @@ message resource handling, and event propagation, making it a powerful and flexi
 1. **Add Spring Dependency**: Include Spring Framework dependencies in your project (e.g., via Maven or Gradle).
 2. **Create Configuration**: Define the application configuration using XML, Java classes, or annotations.
 3. **Initialize ApplicationContext**: Instantiate `ApplicationContext` using one of its implementations, such as:
-    - `ClassPathXmlApplicationContext`
+    - `ClassPathXmlApplicationContext`: Add Beans.xml file in `main/resources` folder.
     - `FileSystemXmlApplicationContext`
     - `AnnotationConfigApplicationContext`
 4. **Access Beans**: Use `getBean()` to retrieve and use beans defined in the configuration.
 5. **Register Listeners (Optional)**: Add custom event listeners if event handling is required.
 6. **Close Context (Optional)**: Explicitly close the context if resources need to be released manually.
+
+## Example
+```java
+package Bean.ApplicationContext;
+
+
+import IoC.*;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class App {
+   public static void main(String[] args) {
+      ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+
+      Doctor staff = (Doctor) context.getBean("doctor");
+      staff.assist();
+      System.out.println(staff.getQualification());
+   }
+}
+
+```
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean id="doctor" class="IoC.Doctor">
+      <property name="qualification" value="Developer" />
+   </bean>
+   <bean id="nurse" class="IoC.Nurse"></bean>
+
+</beans>
+```
 
 ## Advantages of ApplicationContext
 
