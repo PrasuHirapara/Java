@@ -28,8 +28,172 @@ The lifecycle of a bean in Spring involves several phases, from creation to dest
 ### Configuration Methods
 Beans can be configured in Spring using:
 1. **XML Configuration**: Define beans in an XML file, specifying their ID, class, and dependencies.
+- Example:
+```java
+package IoC;
+
+public class Doctor implements Staff{
+private String qualification;
+private String name;
+
+    Doctor(Nurse nurse) {
+        nurse.assist();
+    }
+
+    @Override
+    public void assist() {
+        System.out.println("Doctor is assisting");
+    }
+
+    public String getQualification() {
+        return qualification;
+    }
+
+    public void setQualification(String qualification) {
+        this.qualification = qualification;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+```
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+       <bean id="doctor" class="IoC.Doctor">
+           <property name="qualification" value="Developer" />
+           <property name="name" value="Prasu" />
+           <constructor-arg name="nurse" ref="nurse" />
+       </bean>
+       <bean id="nurse" class="IoC.Nurse"></bean>
+
+</beans>
+
+```
+
 2. **Java Configuration**: Use `@Configuration` and `@Bean` annotations to define beans.
+```java
+package Bean.JavaConfig;
+
+import IoC.Doctor;
+import IoC.Nurse;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+//@ComponentScan(basePackages = "IoC") // if not, then define Bean yourself using @Bean annotation
+public class JavaConfig {
+
+    @Bean
+    public Nurse nurse() {
+        return new Nurse();
+    }
+
+    @Bean
+    public Doctor doctor() {
+        return new Doctor(nurse());
+    }
+}
+```
+```java
+package IoC;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Doctor implements Staff{
+    private String qualification;
+    private String name;
+    
+    public Doctor(Nurse nurse) {
+        nurse.assist();
+    }
+
+    @Override
+    public void assist() {
+        System.out.println("Doctor is assisting");
+    }
+
+    public String getQualification() {
+        return qualification;
+    }
+
+    public void setQualification(String qualification) {
+        this.qualification = qualification;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+```
+
 3. **Annotations**: Use annotations like `@Component`, `@Service`, `@Repository`, and `@Controller` to define beans.
+- Example:
+```java
+package IoC;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Doctor implements Staff{
+    private String qualification;
+    private String name;
+    
+    Doctor(Nurse nurse) {
+        nurse.assist();
+    }
+
+    @Override
+    public void assist() {
+        System.out.println("Doctor is assisting");
+    }
+
+    public String getQualification() {
+        return qualification;
+    }
+
+    public void setQualification(String qualification) {
+        this.qualification = qualification;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+```
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+   
+    <context:component-scan base-package="IoC"/>
+
+</beans>
+
+```
 
 #### Explanation of Common Annotations
 1. **@Component**: A generic stereotype for any Spring-managed component. Used on classes.

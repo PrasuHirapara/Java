@@ -1,10 +1,13 @@
 package IoC;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Doctor implements Staff{
     private String qualification;
     private String name;
 
-    Doctor(Nurse nurse) {
+    public Doctor(Nurse nurse) {
         nurse.assist();
     }
 

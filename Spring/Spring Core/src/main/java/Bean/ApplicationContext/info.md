@@ -29,16 +29,10 @@ message resource handling, and event propagation, making it a po<constructor-arg
 2. **Create Configuration**: Define the application configuration using XML, Java classes, or annotations.
 3. **Initialize ApplicationContext**: Instantiate `ApplicationContext` using one of its implementations, such as:
     - `ClassPathXmlApplicationContext`: Add Beans.xml file in `main/resources` folder.
-    - `FileSystemXmlApplicationContext`
-    - `AnnotationConfigApplicationContext`
-4. **Access Beans**: Use `getBean()` to retrieve and use beans defined in the configuration.
-5. **Register Listeners (Optional)**: Add custom event listeners if event handling is required.
-6. **Close Context (Optional)**: Explicitly close the context if resources need to be released manually.
 
-## Example
+- ## Example
 ```java
 package Bean.ApplicationContext;
-
 
 import IoC.*;
 import org.springframework.context.ApplicationContext;
@@ -50,27 +44,64 @@ public class App {
 
       Doctor staff = (Doctor) context.getBean("doctor");
       staff.assist();
+      System.out.println(staff.getName());
       System.out.println(staff.getQualification());
    }
 }
 
+
+```
+   - `FileSystemXmlApplicationContext`
+   - `AnnotationConfigApplicationContext`
+```java
+package Bean.ApplicationContext;
+
+
+import Bean.JavaConfig.JavaConfig;
+import IoC.*;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class App {
+    public static void main(String[] args) {
+        ApplicationContext context = new AnnotationConfigApplicationContext(JavaConfig.class);
+
+        Doctor staff = (Doctor) context.getBean("doctor");
+        staff.assist();
+        System.out.println(staff.getName());
+        System.out.println(staff.getQualification());
+    }
+}
+```
+```java
+package Bean.JavaConfig;
+
+import IoC.Doctor;
+import IoC.Nurse;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+//@ComponentScan(basePackages = "IoC") // if not, then define Bean yourself using @Bean annotation
+public class JavaConfig {
+
+    @Bean
+    public Nurse nurse() {
+        return new Nurse();
+    }
+
+    @Bean
+    public Doctor doctor() {
+        return new Doctor(nurse());
+    }
+}
 ```
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+4. **Access Beans**: Use `getBean()` to retrieve and use beans defined in the configuration.
+5. **Register Listeners (Optional)**: Add custom event listeners if event handling is required.
+6. **Close Context (Optional)**: Explicitly close the context if resources need to be released manually.
 
-   <bean id="doctor" class="IoC.Doctor">
-      <property name="qualification" value="Developer" />
-      <property name="name" value="Prasu" />
-      <constructor-arg name="nurse" ref="nurse" />
-   </bean>
-   <bean id="nurse" class="IoC.Nurse"></bean>
-
-</beans>
-```
 
 ## Advantages of ApplicationContext
 

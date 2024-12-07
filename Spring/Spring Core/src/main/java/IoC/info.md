@@ -14,23 +14,8 @@ Dependency Injection (DI) is the most common implementation of IoC. It allows th
 ## Types of Dependency Injection
 
 1. **Constructor Injection**
-```xml
-<bean id="doctor" class="IoC.Doctor">
-    <constructor-arg name="nurse" ref="nurse" />
-</bean>
-```
 2. **Setter Injection**
-```xml
-<bean id="doctor" class="IoC.Doctor">
-    <property name="qualification" value="Developer" />
-</bean>
-```
 3. **Field Injection**
-```xml
-<bean id="doctor" class="IoC.Doctor">
-    <property name="name" value="Prasu" />
-</bean>
-```
 
 ## Spring IoC Container
 
