@@ -1,5 +1,5 @@
-# Introduction to AOP (Aspect-Oriented Programming)
-Aspect-Oriented Programming (AOP) is a programming paradigm that aims to modularize cross-cutting concerns (such as logging, security, and transaction management) by separating them from the core business logic. In Java Spring, AOP allows developers to define additional behaviors that can be applied to multiple classes without modifying their code.
+# Introduction to AOP (Aspects-Oriented Programming)
+Aspects-Oriented Programming (AOP) is a programming paradigm that aims to modularize cross-cutting concerns (such as logging, security, and transaction management) by separating them from the core business logic. In Java Spring, AOP allows developers to define additional behaviors that can be applied to multiple classes without modifying their code.
 
 ## Why Use AOP in Spring?
 - **Separation of Concerns**: Helps in isolating cross-cutting concerns.
@@ -9,8 +9,8 @@ Aspect-Oriented Programming (AOP) is a programming paradigm that aims to modular
 
 ## Core Concepts of AOP
 
-### Aspect
-- An **Aspect** is a module that encapsulates behaviors affecting multiple classes.
+### Aspects
+- An **Aspects** is a module that encapsulates behaviors affecting multiple classes.
 
 ### Join Point
 - A **Join Point** is a specific point in the execution of a program, such as a method call or execution.
@@ -40,12 +40,12 @@ Aspect-Oriented Programming (AOP) is a programming paradigm that aims to modular
 
 ## Key AOP Annotations in Spring
 
-### `@Aspect`
-Marks a class as an Aspect.
+### `@Aspects`
+Marks a class as an Aspects.
 
 ```java
-@Aspect
-public class LoggingAspect {
+@Aspects
+public class Aspects.LoggingAspect {
     // Advice methods
 }
 ```
@@ -109,7 +109,7 @@ public Object logAround(ProceedingJoinPoint joinPoint) throws Throwable {
 |----------------------------|--------------------------------|-------------------------------------------|
 | **Primary Focus**         | Classes and Objects            | Cross-cutting Concerns                    |
 | **Modularity**            | Based on encapsulation         | Based on separation of concerns           |
-| **Structure**             | Hierarchical                   | Aspect-oriented                           |
+| **Structure**             | Hierarchical                   | Aspects-oriented                           |
 | **Code Reusability**      | Inheritance and composition    | Centralized aspects                       |
 | **Maintenance**           | Can lead to code duplication   | Easier with centralized aspects           |
 | **Flexibility**           | Limited to class structure     | Dynamic weaving of concerns               |
@@ -139,12 +139,15 @@ public Object logAround(ProceedingJoinPoint joinPoint) throws Throwable {
 ### Sample Code
 
 ```java
-@Aspect
+
+@Aspects
 @Component
-public class LoggingAspect {
-    
+public class Aspect.
+
+LoggingAspect {
+
     @Before("execution(* com.example.service.*.*(..))")
-    public void logBefore() {
+    public void logBefore () {
         System.out.println("Method is about to be executed.");
     }
 }
@@ -159,15 +162,15 @@ public class UserService {
 @Configuration
 @EnableAspectJAutoProxy
 public class AppConfig {
-    
+
     @Bean
     public UserService userService() {
         return new UserService();
     }
-    
+
     @Bean
-    public LoggingAspect loggingAspect() {
-        return new LoggingAspect();
+    public Aspects.LoggingAspect loggingAspect() {
+        return new Aspects.LoggingAspect();
     }
 }
 ```
