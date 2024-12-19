@@ -27,12 +27,12 @@ In Spring Boot, controllers play a crucial role in handling HTTP requests and de
 - Enables Spring to detect and register the class as a bean.
 
 ### 2. `@Controller`
-- Indicates that a class is a Spring MVC controller.
+- It Indicates that a class is a Spring MVC controller.
 - Typically used to define endpoints for web applications that return views (e.g., JSP, Thymeleaf).
 
 ### 3. `@RestController`
 - Combines `@Controller` and `@ResponseBody`.
-- Indicates that a class is a RESTful controller, and all methods return JSON or XML responses by default.
+- It Indicates that a class is a RESTful controller, and all methods return JSON or XML responses by default.
 
 ### 4. `@RequestMapping`
 - Maps HTTP requests to specific classes or methods.
