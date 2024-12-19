@@ -166,3 +166,6 @@ void updateUserStatus(@Param("id") Long id, @Param("status") String status);
 
 ## Conclusion
 The Repository Layer in Spring Boot abstracts database interactions, simplifying CRUD operations and query execution. With Spring Data JPA and annotations, developers can focus on business logic while the framework handles the intricacies of data access. Adhering to best practices ensures maintainability and scalability, making the application robust and efficient.
+
+- All methods of repository for database and its return type ie Optional findById(id).....give all methods seperate for get, post, put, delete(minimum 10 per each request type)
+- How to create own implenmtation and its rule and keyword with one line description and example defined by jpa

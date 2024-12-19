@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class DepartmentEntity {
+public class Department {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO) // Primary key
@@ -15,14 +15,14 @@ public class DepartmentEntity {
     private String departmentAddress;
     private String departmentCode;
 
-    DepartmentEntity(Long departmentId, String departmentName, String departmentAddress, String departmentCode) {
+    Department(Long departmentId, String departmentName, String departmentAddress, String departmentCode) {
         this.departmentId = departmentId;
         this.departmentName = departmentName;
         this.departmentAddress = departmentAddress;
         this.departmentCode = departmentCode;
     }
 
-    public DepartmentEntity() {
+    public Department() {
     }
 
     public Long getDepartmentId() {

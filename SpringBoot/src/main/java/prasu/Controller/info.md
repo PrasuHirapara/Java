@@ -136,3 +136,5 @@ public class HelloController {
 ## Conclusion
 
 Spring Boot controllers are the backbone of web and RESTful applications. By leveraging the rich set of annotations and following best practices, developers can efficiently handle HTTP requests, build clean APIs, and maintain a well-structured codebase.
+
+-- @RequestBody
