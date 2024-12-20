@@ -3,10 +3,12 @@ package prasu.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import prasu.Entity.Department;
+import prasu.Error.DepartmentNotFound;
 import prasu.Repository.DepartmentRepository;
 
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 
 @Service
 public class DepartmentServiceImpl implements DepartmentService {
@@ -25,8 +27,14 @@ public class DepartmentServiceImpl implements DepartmentService {
     }
 
     @Override
-    public Department fetchDepartmentById(Long id) {
-        return departmentRepository.findById(id).get();
+    public Department fetchDepartmentById(Long id) throws DepartmentNotFound {
+        Optional<Department> department = departmentRepository.findById(id);
+
+        if(department.isPresent()) {
+            throw new DepartmentNotFound("Department not found exception.");
+        }
+
+        return department.get();
     }
 
     @Override

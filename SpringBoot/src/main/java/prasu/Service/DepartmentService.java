@@ -1,6 +1,7 @@
 package prasu.Service;
 
 import prasu.Entity.Department;
+import prasu.Error.DepartmentNotFound;
 
 import java.util.List;
 
@@ -10,7 +11,7 @@ public interface DepartmentService {
 
     List<Department> fetchDepartmentList();
 
-    Department fetchDepartmentById(Long id);
+    Department fetchDepartmentById(Long id) throws DepartmentNotFound;
 
     void deleteDepartmentById(Long id);
 
