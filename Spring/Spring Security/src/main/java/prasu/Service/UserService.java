@@ -5,5 +5,7 @@ import prasu.Model.UserModel;
 
 public interface UserService {
 
-    public User registerUser(UserModel userModel);
+    User registerUser(UserModel userModel);
+
+    void saveVerificationForUser(String token, User user);
 }

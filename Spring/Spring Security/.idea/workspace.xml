@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="67298d5a-4699-476a-9e5b-fabe91da9321" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Configuration/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prasu/Configuration/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prasu/Controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Documentations/PasswordEncoder.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prasu/Documentations/Encryption/PasswordEncoder.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prasu/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prasu/Service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -72,6 +75,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\Desktop\Projects\Java\Spring\Spring Security\src\main\java\prasu\Documentations\Token" />
       <recent name="C:\Users\Dell\Desktop\Projects\Java\Spring\Spring Security\src\main\java\prasu\Documentations\Encryption" />
     </key>
   </component>
@@ -104,7 +108,7 @@
       <workItem from="1734848725227" duration="2772000" />
       <workItem from="1734851684334" duration="458000" />
       <workItem from="1734852154579" duration="429000" />
-      <workItem from="1734852682374" duration="470000" />
+      <workItem from="1734852682374" duration="5913000" />
     </task>
     <servers />
   </component>

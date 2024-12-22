@@ -4,14 +4,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import prasu.Entity.User;
+import prasu.Entity.VerificationToken;
 import prasu.Model.UserModel;
 import prasu.Repository.UserRepository;
+import prasu.Repository.VerificationTokenRepository;
 
 @Service
 public class UserServiceImpl implements UserService{
 
     @Autowired
     private UserRepository userRepository;
+
+    @Autowired
+    private VerificationTokenRepository verificationTokenRepository;
 
     @Autowired
     private PasswordEncoder passwordEncoder;
@@ -29,5 +34,11 @@ public class UserServiceImpl implements UserService{
         userRepository.save(user);
 
         return user;
+    }
+
+    @Override
+    public void saveVerificationForUser(String token, User user) {
+        VerificationToken verificationToken = new VerificationToken(user, token);
+        verificationTokenRepository.save(verificationToken);
     }
 }
