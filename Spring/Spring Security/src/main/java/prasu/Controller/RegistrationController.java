@@ -3,9 +3,7 @@ package prasu.Controller;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import prasu.Entity.User;
 import prasu.Event.RegistrationEvent;
 import prasu.Model.UserModel;
@@ -30,6 +28,17 @@ public class RegistrationController {
         ));
 
         return "Success";
+    }
+
+    @GetMapping("/verifyRegistration")
+    public String verifyRegistration(@RequestParam("token") String token) {
+        String result = userService.validateVerificationToken(token);
+
+        if(result.equalsIgnoreCase("valid")) {
+            return "valid";
+        } else {
+            return "Bad user";
+        }
     }
 
     private String applicationUrl(HttpServletRequest request) {

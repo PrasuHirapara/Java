@@ -26,7 +26,7 @@ public class RegistrationListner implements ApplicationListener<RegistrationEven
 
 //        send mail to user
         String url = event.getApplicationUrl()
-                + "verifyRegistration?token="
+                + "/verifyRegistration?token="
                 + token;
         log.info(url);
     }

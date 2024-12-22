@@ -9,6 +9,8 @@ import prasu.Model.UserModel;
 import prasu.Repository.UserRepository;
 import prasu.Repository.VerificationTokenRepository;
 
+import java.util.Calendar;
+
 @Service
 public class UserServiceImpl implements UserService{
 
@@ -40,5 +42,27 @@ public class UserServiceImpl implements UserService{
     public void saveVerificationForUser(String token, User user) {
         VerificationToken verificationToken = new VerificationToken(user, token);
         verificationTokenRepository.save(verificationToken);
+    }
+
+    @Override
+    public String validateVerificationToken(String token) {
+        VerificationToken verificationToken = verificationTokenRepository.findByToken(token);
+
+        if(verificationToken == null) {
+            return "Invalid verification token";
+        }
+
+        User user = verificationToken.getUser();
+        Calendar calendar = Calendar.getInstance();
+
+        if(verificationToken.getExpirationTime().getTime() - calendar.getTime().getTime() < 0) {
+            verificationTokenRepository.delete(verificationToken);
+            return "Expired token";
+        }
+
+        user.setEnabled(true);
+        userRepository.save(user);
+
+        return "Verified";
     }
 }

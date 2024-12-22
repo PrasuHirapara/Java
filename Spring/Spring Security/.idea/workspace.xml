@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="67298d5a-4699-476a-9e5b-fabe91da9321" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Configuration/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prasu/Configuration/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prasu/Controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Documentations/PasswordEncoder.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prasu/Documentations/Encryption/PasswordEncoder.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Listners/RegistrationListner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prasu/Listners/RegistrationListner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Repository/VerificationTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prasu/Repository/VerificationTokenRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prasu/Service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prasu/Service/UserServiceImpl.java" afterDir="false" />
     </list>
@@ -108,7 +108,7 @@
       <workItem from="1734848725227" duration="2772000" />
       <workItem from="1734851684334" duration="458000" />
       <workItem from="1734852154579" duration="429000" />
-      <workItem from="1734852682374" duration="5913000" />
+      <workItem from="1734852682374" duration="7842000" />
     </task>
     <servers />
   </component>

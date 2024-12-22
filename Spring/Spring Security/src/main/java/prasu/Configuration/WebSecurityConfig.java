@@ -13,7 +13,8 @@ public class WebSecurityConfig {
     private static final String[] WHITE_LIST_ARRAY = {
             "/hello",
             "/login",
-            "/register"
+            "/register",
+            "/verifyRegistration"
     };
 
     @Bean
