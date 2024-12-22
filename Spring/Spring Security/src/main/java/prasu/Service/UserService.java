@@ -1,6 +1,7 @@
 package prasu.Service;
 
 import prasu.Entity.User;
+import prasu.Entity.VerificationToken;
 import prasu.Model.UserModel;
 
 public interface UserService {
@@ -10,4 +11,6 @@ public interface UserService {
     void saveVerificationForUser(String token, User user);
 
     String validateVerificationToken(String token);
+
+    VerificationToken generateNewVerificationToken(String oldToken);
 }

@@ -10,6 +10,7 @@ import prasu.Repository.UserRepository;
 import prasu.Repository.VerificationTokenRepository;
 
 import java.util.Calendar;
+import java.util.UUID;
 
 @Service
 public class UserServiceImpl implements UserService{
@@ -64,5 +65,15 @@ public class UserServiceImpl implements UserService{
         userRepository.save(user);
 
         return "Verified";
+    }
+
+    @Override
+    public VerificationToken generateNewVerificationToken(String oldToken) {
+        VerificationToken verificationToken = verificationTokenRepository.findByToken(oldToken);
+
+        verificationToken.setToken(UUID.randomUUID().toString());
+        verificationTokenRepository.save(verificationToken);
+
+        return verificationToken;
     }
 }
