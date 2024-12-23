@@ -1,21 +1,16 @@
 package prasu.Entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.stereotype.Component;
 
 import java.util.Calendar;
 import java.util.Date;
 
-@Component
 @Entity
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
-public class VerificationToken {
-
+public class PasswordResendToken {
     private static final int EXPIRATION_TIME = 10;
 
     @Id
@@ -28,18 +23,19 @@ public class VerificationToken {
     @JoinColumn(
             name = "user_id",
             nullable = false,
-            foreignKey = @ForeignKey(name = "FK_USER_VERIFY_TOKEN")
+            foreignKey = @ForeignKey(name = "FK_USER_PASSWORD_TOKEN")
     )
+
     private User user;
 
-    public VerificationToken(User user, String token) {
+    public PasswordResendToken(User user, String token) {
         super();
         this.user = user;
         this.token = token;
         this.expirationTime = calculateExpirationDate(EXPIRATION_TIME);
     }
 
-    public VerificationToken(String token) {
+    public PasswordResendToken(String token) {
         super();
         this.token = token;
         this.expirationTime = calculateExpirationDate(EXPIRATION_TIME);

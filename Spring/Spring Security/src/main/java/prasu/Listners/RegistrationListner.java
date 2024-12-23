@@ -30,9 +30,4 @@ public class RegistrationListner implements ApplicationListener<RegistrationEven
                 + token;
         log.info(url);
     }
-
-    @Override
-    public boolean supportsAsyncExecution() {
-        return ApplicationListener.super.supportsAsyncExecution();
-    }
 }

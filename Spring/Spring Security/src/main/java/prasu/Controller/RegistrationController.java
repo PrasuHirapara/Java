@@ -8,9 +8,14 @@ import org.springframework.web.bind.annotation.*;
 import prasu.Entity.User;
 import prasu.Entity.VerificationToken;
 import prasu.Event.RegistrationEvent;
+import prasu.Model.PasswordModel;
 import prasu.Model.UserModel;
 import prasu.Repository.VerificationTokenRepository;
 import prasu.Service.UserService;
+
+import javax.swing.text.html.Option;
+import java.util.Optional;
+import java.util.UUID;
 
 @RestController
 @Slf4j
@@ -60,17 +65,56 @@ public class RegistrationController {
         return "Verification Link sent";
     }
 
-//    @PostMapping("/resetPassword")
-//    public String resetPassword(@RequestParam("token") String token) {
-//
-//    }
+    @PostMapping("/resetPassword")
+    public String resetPassword(@RequestBody PasswordModel passwordModel, HttpServletRequest request) {
+        User user = userService.findUserByEmail(passwordModel.getEmail());
+        String url = "";
+
+        if(user != null) {
+            String token = UUID.randomUUID().toString();
+            userService.createPasswordResetTokenforUser(user, token);
+            url = passwordResetMail(user, applicationUrl(request), token);
+        }
+
+        return url;
+    }
+
+    private String passwordResetMail(User user, String applicationUrl, String token) {
+        String url = applicationUrl
+                + "/savePassword?token="
+                + token;
+
+        log.info("Click url to verify account {}", url);
+
+        return url;
+    }
+
+    @PostMapping("/savePassword")
+    public String savePassword(
+            @RequestParam("token") String token,
+            @RequestBody PasswordModel passwordModel
+    ) {
+        String result = userService.validatePasswordResetToken(token);
+
+        if(!result.equalsIgnoreCase("valid")) {
+            return "Invalid token";
+        }
+
+        Optional<User> user = userService.getUserByPasswordResetToken(token);
+        if(user.isPresent()) {
+            userService.changePassword(user.get(), passwordModel.getNewPassword());
+            return "Password reset successfully";
+        }else {
+            return "Invalid token";
+        }
+    }
 
     private void resendVerificationMail(User user, String applicationUrl, VerificationToken verificationToken) {
         String url = applicationUrl
                 + "/verifyRegistration?token="
                 + verificationToken.getToken();
 
-        log.info(url);
+        log.info("Click url to regenerate token {}", url);
     }
 
     private String applicationUrl(HttpServletRequest request) {
