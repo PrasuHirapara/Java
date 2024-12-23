@@ -47,7 +47,7 @@ public class RegistrationController {
         }
     }
 
-    @GetMapping("resendVerifyToken")
+    @GetMapping("/resendVerifyToken")
     public String resendVerificationToken(
             @RequestParam("token") String oldToken,
             HttpServletRequest request
@@ -59,6 +59,11 @@ public class RegistrationController {
 
         return "Verification Link sent";
     }
+
+//    @PostMapping("/resetPassword")
+//    public String resetPassword(@RequestParam("token") String token) {
+//
+//    }
 
     private void resendVerificationMail(User user, String applicationUrl, VerificationToken verificationToken) {
         String url = applicationUrl
