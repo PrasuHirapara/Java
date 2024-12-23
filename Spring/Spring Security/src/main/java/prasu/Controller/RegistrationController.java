@@ -75,17 +75,7 @@ public class RegistrationController {
             userService.createPasswordResetTokenforUser(user, token);
             url = passwordResetMail(user, applicationUrl(request), token);
         }
-
-        return url;
-    }
-
-    private String passwordResetMail(User user, String applicationUrl, String token) {
-        String url = applicationUrl
-                + "/savePassword?token="
-                + token;
-
-        log.info("Click url to verify account {}", url);
-
+        log.info("Reset password link: " + url);
         return url;
     }
 
@@ -107,6 +97,29 @@ public class RegistrationController {
         }else {
             return "Invalid token";
         }
+    }
+
+    @PostMapping("/changePassword")
+    public String changePassword(@RequestBody PasswordModel passwordModel) {
+        User user = userService.findUserByEmail(passwordModel.getEmail());
+
+        if(!userService.checkIfValidPassword(user, passwordModel.getOldPassword())) {
+            return "Invalid old password";
+        }
+
+        userService.changePassword(user, passwordModel.getNewPassword());
+
+        return "Password changed successfully";
+    }
+
+    private String passwordResetMail(User user, String applicationUrl, String token) {
+        String url = applicationUrl
+                + "/savePassword?token="
+                + token;
+
+        log.info("Click url to verify account {}", url);
+
+        return url;
     }
 
     private void resendVerificationMail(User user, String applicationUrl, VerificationToken verificationToken) {
