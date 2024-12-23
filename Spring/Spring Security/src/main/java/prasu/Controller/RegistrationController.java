@@ -12,8 +12,6 @@ import prasu.Model.PasswordModel;
 import prasu.Model.UserModel;
 import prasu.Repository.VerificationTokenRepository;
 import prasu.Service.UserService;
-
-import javax.swing.text.html.Option;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -26,8 +24,6 @@ public class RegistrationController {
 
     @Autowired
     private ApplicationEventPublisher eventPublisher;
-    @Autowired
-    private VerificationTokenRepository verificationTokenRepository;
 
     @PostMapping("/register")
     public String registerUser(@RequestBody UserModel userModel, final HttpServletRequest request) {
