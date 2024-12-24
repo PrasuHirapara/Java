@@ -6,8 +6,33 @@
   <component name="ChangeListManager">
     <list default="true" id="67298d5a-4699-476a-9e5b-fabe91da9321" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Configuration/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prasu/Configuration/AuthorizationServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prasu/Service/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oauth-authorization-server/src/main/java/prasu/Config/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Oauth-authorization-server/src/main/java/prasu/Config/AuthorizationServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oauth-authorization-server/src/main/java/prasu/Config/DefaultSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Oauth-authorization-server/src/main/java/prasu/Config/DefaultSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oauth-authorization-server/src/main/java/prasu/Service/CustomAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/Oauth-authorization-server/src/main/java/prasu/Service/CustomAuthenticationProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oauth-authorization-server/src/main/java/prasu/Service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Oauth-authorization-server/src/main/java/prasu/Service/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/prasu/Configuration/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/prasu/Configuration/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Documentations/Encryption/BCryptPasswordEncoder.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Documentations/Encryption/PasswordEncoder.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Documentations/Events/ApplicationEventPublisher.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Documentations/Events/EventListner.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Documentations/Events/info.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Documentations/OAuth2/AbstractionProtocolFlow.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Documentations/OAuth2/Authentication.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Documentations/OAuth2/Config/AuthenticationManagerBuilder.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Documentations/OAuth2/Config/InMemoryRegisteredClientRepository.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Documentations/OAuth2/Config/OAuth2AuthorizationServerConfiguration.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Documentations/OAuth2/Config/RegisteredClient.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Documentations/OAuth2/Config/RegisteredClientRepository.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Documentations/OAuth2/Config/SecurityFilterChain.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Documentations/OAuth2/Principle.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Documentations/OAuth2/UserDetailsService.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Documentations/OAuth2/UsernamePasswordAuthenticationToken.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Documentations/Securiity/SecurityFilterChain.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Documentations/Token/UUID.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Documentations/info.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,43 +75,76 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.SpringSecurity [deploy].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.SpringSecurity [install].executor&quot;: &quot;Run&quot;,
-    &quot;Notification.DisplayName-DoNotAsk-Database detector&quot;: &quot;Database detector&quot;,
-    &quot;Notification.DoNotAsk-Database detector&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.App.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.SpringSecurity [deploy].executor": "Run",
+    "Maven.SpringSecurity [install].executor": "Run",
+    "Notification.DisplayName-DoNotAsk-Database detector": "Database detector",
+    "Notification.DoNotAsk-Database detector": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.App.executor": "Run",
+    "Spring Boot.OauthAuthorizationServerApplication.executor": "Run",
+    "Spring Boot.OauthResourceServerApplication.executor": "Run",
+    "Spring Boot.SpringSecurityClientApplication.executor": "Run",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Dell/Desktop/Projects/Java/Spring/Spring Security",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Dell\Desktop\Projects\Java\Spring\Spring Security\src\main\java\prasu\Documentations\Token" />
-      <recent name="C:\Users\Dell\Desktop\Projects\Java\Spring\Spring Security\src\main\java\prasu\Documentations\Encryption" />
+      <recent name="C:\Users\Dell\Desktop\Projects\Java\Spring\Spring Security\spring-security-client\src\main\java\prasu" />
+      <recent name="C:\Users\Dell\Desktop\Projects\Java\Spring\Spring Security\spring-security-client\src\main\java\prasu\" />
+      <recent name="C:\Users\Dell\Desktop\Projects\Java\Spring\Spring Security\Oauth-authorization-server\src\main\java\prasu\Service" />
+      <recent name="C:\Users\Dell\Desktop\Projects\Java\Spring\Spring Security\Oauth-authorization-server\src\main\java\prasu\Repository" />
+      <recent name="C:\Users\Dell\Desktop\Projects\Java\Spring\Spring Security\Oauth-authorization-server\src\main\java\prasu\Entity" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="SpringSecurity" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="prasu.App" />
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.OauthAuthorizationServerApplication">
+    <configuration name="OauthAuthorizationServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Oauth-authorization-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="prasu.OauthAuthorizationServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OauthResourceServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Oauth-resource-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="prasu.OauthResourceServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringSecurityClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring-security-client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="prasu.SpringSecurityClientApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -118,7 +176,12 @@
       <workItem from="1734944264504" duration="781000" />
       <workItem from="1734945067084" duration="705000" />
       <workItem from="1734950032345" duration="4864000" />
-      <workItem from="1735025913905" duration="1588000" />
+      <workItem from="1735025913905" duration="2112000" />
+      <workItem from="1735028764813" duration="30000" />
+      <workItem from="1735029242053" duration="445000" />
+      <workItem from="1735029722123" duration="239000" />
+      <workItem from="1735029984438" duration="2937000" />
+      <workItem from="1735049022858" duration="1844000" />
     </task>
     <servers />
   </component>
