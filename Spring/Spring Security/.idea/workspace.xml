@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="67298d5a-4699-476a-9e5b-fabe91da9321" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Configuration/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prasu/Configuration/AuthorizationServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prasu/Service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prasu/Service/CustomUserDetailsService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +117,8 @@
       <workItem from="1734943773278" duration="464000" />
       <workItem from="1734944264504" duration="781000" />
       <workItem from="1734945067084" duration="705000" />
-      <workItem from="1734950032345" duration="4451000" />
+      <workItem from="1734950032345" duration="4864000" />
+      <workItem from="1735025913905" duration="1588000" />
     </task>
     <servers />
   </component>
