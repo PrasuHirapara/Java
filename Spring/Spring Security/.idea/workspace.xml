@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67298d5a-4699-476a-9e5b-fabe91da9321" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Core Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Core Java/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Oauth-authorization-server/src/main/java/prasu/Config/DefaultSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Oauth-authorization-server/src/main/java/prasu/Config/DefaultSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Oauth-authorization-server/src/main/java/prasu/Service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Oauth-authorization-server/src/main/java/prasu/Service/CustomUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/prasu/Configuration/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/prasu/Configuration/WebSecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,6 +161,8 @@
       <workItem from="1735049022858" duration="2749000" />
       <workItem from="1735192517400" duration="668000" />
       <workItem from="1735224246034" duration="2000" />
+      <workItem from="1735224663456" duration="2207000" />
+      <workItem from="1735308018692" duration="18000" />
     </task>
     <servers />
   </component>
