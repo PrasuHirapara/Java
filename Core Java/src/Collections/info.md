@@ -190,19 +190,3 @@ System.out.println(list.get(0));
 ---
 
 ### 4. **Set Interface**
-- **Description**: A collection that does not allow duplicate elements.
-- **Subtypes**: HashSet, LinkedHashSet, TreeSet.
-- **Methods**:
-    - `boolean add(E e)`: Adds an element if not already present.
-    - `boolean contains(Object o)`: Checks if an element exists.
-    - `boolean remove(Object o)`: Removes an element if present.
-    - `int size()`: Returns the number of elements.
-    - `boolean isEmpty()`: Checks if the set is empty.
-    - `boolean equals(Object o)`: Checks if the set is equal to another object.
-    - `Object[] toArray()`: Converts the set to an array.
-    - `<T> T[] toArray(T[] a)`: Converts the set to an array of specified type.
-    - `default Spliterator<E> spliterator()`: Creates a Spliterator for the set.
-
-#### Example:
-```java
-Set<String> set = new HashSet<>
