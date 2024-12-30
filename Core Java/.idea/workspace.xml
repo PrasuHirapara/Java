@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="414a0ab2-33ae-4c10-80d2-598b2fa50994" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/info.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/Spring Security/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -215,8 +216,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
       </set>
     </attachedChunks>
   </component>
@@ -280,6 +281,8 @@
       <workItem from="1732822472519" duration="4000" />
       <workItem from="1735224257642" duration="396000" />
       <workItem from="1735308073316" duration="314000" />
+      <workItem from="1735482488599" duration="404000" />
+      <workItem from="1735562393199" duration="892000" />
     </task>
     <servers />
   </component>
