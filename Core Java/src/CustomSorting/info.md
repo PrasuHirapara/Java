@@ -121,7 +121,7 @@ public class StudentComparable implements Comparable<StudentComparable> {
 package CustomSorting;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Collection;
 
 public class Main {
     public static void main(String[] args) {
@@ -154,7 +154,7 @@ public class Main {
             System.out.println(student);
         }
 
-        Collections.sort(studentComparableList);
+        Collection.sort(studentComparableList);
 
         System.out.println("After Sorting by Marks with Comparable:");
         for (StudentComparable student : studentComparableList) {
@@ -173,5 +173,5 @@ public class Main {
 | **Method**         | `compare(Object o1, Object o2)`                | `compareTo(Object o)`      |
 | **Flexibility**    | Provides flexibility for multiple sort orders. | One fixed sorting order.   |
 | **Modification**   | Does not require modification of the class.    | Requires modification of the class. |
-| **Usage**          | `Collections.sort(list, comparator)`           | `Collections.sort(list)`   |
+| **Usage**          | `Collection.sort(list, comparator)`           | `Collection.sort(list)`   |
 | **Example Use Case** | Sorting by multiple attributes (e.g., name, marks, rollno). | Sorting by one attribute (e.g., marks). |

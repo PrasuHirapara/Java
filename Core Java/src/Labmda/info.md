@@ -58,7 +58,7 @@ Lambda expressions are primarily used with functional interfaces. When you use a
 ## Usage
 Lambda expressions are commonly used in functional programming, especially in:
 - Streams
-- Collections
+- Collection
 - Multi-threading environments
 
 ---

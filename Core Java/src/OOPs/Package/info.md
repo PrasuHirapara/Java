@@ -78,7 +78,7 @@ public class Main {
 ## 3. java.util
 The java.util package contains utility classes, such as data structures (List, Map, Set), date and time, and other helper functions.
 
-- Key classes/interfaces: `ArrayList`, `LinkedList`, `HashMap`, `HashSet`, `Stack`, `Queue`, `Date`, `Collections`, `Iterator`, `Random`.
+- Key classes/interfaces: `ArrayList`, `LinkedList`, `HashMap`, `HashSet`, `Stack`, `Queue`, `Date`, `Collection`, `Iterator`, `Random`.
 
 ### Example:
 ```java
