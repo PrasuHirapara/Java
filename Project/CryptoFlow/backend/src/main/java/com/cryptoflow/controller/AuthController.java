@@ -1,10 +1,14 @@
 package com.cryptoflow.controller;
 
 import com.cryptoflow.config.JwtProvider;
+import com.cryptoflow.entity.TwoFactorOTP;
 import com.cryptoflow.entity.User;
+import com.cryptoflow.repository.UserRepository;
 import com.cryptoflow.response.AuthResponse;
 import com.cryptoflow.service.CustomUserDetailService;
+import com.cryptoflow.service.TwoFactorOTPService;
 import com.cryptoflow.service.UserService;
+import com.cryptoflow.utils.OTPUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -31,6 +35,11 @@ public class AuthController {
 
     @Autowired
     private CustomUserDetailService customUserDetailService;
+
+    @Autowired
+    private TwoFactorOTPService twoFactorOTPService;
+    @Autowired
+    private UserRepository userRepository;
 
     @PostMapping("/signup")
     public ResponseEntity<AuthResponse> signup(@RequestBody User user) throws Exception {
@@ -72,12 +81,35 @@ public class AuthController {
 
         String jwt = JwtProvider.generateToken(auth);
 
+        User authUser = userRepository.findByEmail(email);
+
+        if(user.getTwoFactorAuth().isEnabled()) {
+            AuthResponse res = new AuthResponse();
+            res.setMessage("2 factor is enabled");
+            res.setTwoFactorAuthEnabled(true);
+
+            String otp = OTPUtils.generateOTP();
+
+            TwoFactorOTP oldTwoFactorOtp = twoFactorOTPService.findByUser(authUser.getId());
+            if(oldTwoFactorOtp != null) {
+                twoFactorOTPService.deleteTwoFactorOTP(oldTwoFactorOtp);
+            }
+
+            TwoFactorOTP newTwoFactorOtp = twoFactorOTPService.createTwoFactorOTP(authUser, otp, jwt);
+
+
+
+            res.setSession(newTwoFactorOtp.getId());
+
+            return new ResponseEntity<>(res, HttpStatus.ACCEPTED);
+        }
+
         AuthResponse res = new AuthResponse();
         res.setJwt(jwt);
         res.setStatus(true);
         res.setMessage("Login Success");
 
-        return new ResponseEntity<>(res, HttpStatus.CREATED);
+        return new ResponseEntity<>(res, HttpStatus.ACCEPTED);
     }
 
     private Authentication authenticate(String email, String password) {
