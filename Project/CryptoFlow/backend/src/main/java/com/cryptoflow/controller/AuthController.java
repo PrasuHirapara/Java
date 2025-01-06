@@ -6,6 +6,7 @@ import com.cryptoflow.entity.User;
 import com.cryptoflow.repository.UserRepository;
 import com.cryptoflow.response.AuthResponse;
 import com.cryptoflow.service.CustomUserDetailService;
+import com.cryptoflow.service.EmailService;
 import com.cryptoflow.service.TwoFactorOTPService;
 import com.cryptoflow.service.UserService;
 import com.cryptoflow.utils.OTPUtils;
@@ -18,10 +19,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/auth")
@@ -38,8 +36,12 @@ public class AuthController {
 
     @Autowired
     private TwoFactorOTPService twoFactorOTPService;
+
     @Autowired
     private UserRepository userRepository;
+
+//    @Autowired
+    private final EmailService emailService = new EmailService();
 
     @PostMapping("/signup")
     public ResponseEntity<AuthResponse> signup(@RequestBody User user) throws Exception {
@@ -97,7 +99,7 @@ public class AuthController {
 
             TwoFactorOTP newTwoFactorOtp = twoFactorOTPService.createTwoFactorOTP(authUser, otp, jwt);
 
-
+            emailService.sendVerificationOtpMail(email, otp);
 
             res.setSession(newTwoFactorOtp.getId());
 
@@ -110,6 +112,25 @@ public class AuthController {
         res.setMessage("Login Success");
 
         return new ResponseEntity<>(res, HttpStatus.ACCEPTED);
+    }
+
+    public ResponseEntity<AuthResponse> verifySigninOtp(
+            @PathVariable String otp,
+            @RequestParam String id
+    ) throws Exception {
+        TwoFactorOTP twoFactorOTP = twoFactorOTPService.findById(id);
+
+        if(twoFactorOTPService.verifyTwoFactorOTP(twoFactorOTP, otp)) {
+            AuthResponse res = new AuthResponse();
+
+            res.setMessage("2 factor authentication is verified");
+            res.setTwoFactorAuthEnabled(true);
+            res.setJwt(twoFactorOTP.getJwt());
+
+            return new ResponseEntity<>(res, HttpStatus.OK);
+        } else {
+            throw new Exception("Invalid Otp");
+        }
     }
 
     private Authentication authenticate(String email, String password) {
