@@ -40,8 +40,8 @@ public class AuthController {
     @Autowired
     private UserRepository userRepository;
 
-//    @Autowired
-    private final EmailService emailService = new EmailService();
+    @Autowired
+    private EmailService emailService;
 
     @PostMapping("/signup")
     public ResponseEntity<AuthResponse> signup(@RequestBody User user) throws Exception {
@@ -114,6 +114,7 @@ public class AuthController {
         return new ResponseEntity<>(res, HttpStatus.ACCEPTED);
     }
 
+    @PostMapping("/two-factor/opt/{otp}")
     public ResponseEntity<AuthResponse> verifySigninOtp(
             @PathVariable String otp,
             @RequestParam String id

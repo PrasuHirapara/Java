@@ -2,6 +2,7 @@ package com.cryptoflow.service;
 
 import com.cryptoflow.config.JwtProvider;
 import com.cryptoflow.domain.VerificationType;
+import com.cryptoflow.entity.TwoFactorAuth;
 import com.cryptoflow.entity.User;
 import com.cryptoflow.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,11 +51,19 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User enableTwoFactorAuthentication(VerificationType verificationType, String sendTo, User user) {
-        return null;
+        TwoFactorAuth twoFactorAuth = new TwoFactorAuth();
+        twoFactorAuth.setEnabled(true);
+        twoFactorAuth.setSendTo(VerificationType.valueOf(sendTo));
+
+        user.setTwoFactorAuth(twoFactorAuth);
+
+        return userRepository.save(user);
     }
 
     @Override
-    public User updatePassword(String oldPassword, String newPassword) {
-        return null;
+    public User updatePassword(User user, String newPassword) {
+        user.setPassword(newPassword);
+
+        return userRepository.save(user);
     }
 }
