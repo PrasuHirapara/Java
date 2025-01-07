@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="414a0ab2-33ae-4c10-80d2-598b2fa50994" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collections/ArrayListEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/ArrayListEx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collections/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/info.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CustomSorting/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomSorting/info.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Labmda/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Labmda/info.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OOPs/Package/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOPs/Package/info.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/CryptoFlow/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/CryptoFlow/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/CryptoFlow/backend/src/main/java/com/cryptoflow/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/CryptoFlow/backend/src/main/java/com/cryptoflow/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/CryptoFlow/backend/src/main/java/com/cryptoflow/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/CryptoFlow/backend/src/main/java/com/cryptoflow/controller/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/Spring Security/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,80 +60,80 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Annotation.Main.executor": "Run",
-    "Application.CallableExample.executor": "Run",
-    "Application.CollectionEx.executor": "Run",
-    "Application.Comparator.Main.executor": "Run",
-    "Application.Creation.executor": "Run",
-    "Application.CustomSorting.Main.executor": "Run",
-    "Application.CyclicBarrierExample.executor": "Run",
-    "Application.DaemonThread.executor": "Run",
-    "Application.DateTimeFormatterExample.executor": "Run",
-    "Application.DeSerialize.executor": "Run",
-    "Application.Deadlock.executor": "Run",
-    "Application.DistinctExample.executor": "Run",
-    "Application.DurationExample.executor": "Run",
-    "Application.ExceptionHandling.Main.executor": "Run",
-    "Application.FilterMethod.executor": "Run",
-    "Application.Future.Main.executor": "Run",
-    "Application.InstantExample.executor": "Run",
-    "Application.Labmda.Main.executor": "Run",
-    "Application.ListNetworkInterfaces.executor": "Run",
-    "Application.LocalDateExample.executor": "Run",
-    "Application.LocalDateTimeExample.executor": "Run",
-    "Application.LocalTimeExample.executor": "Run",
-    "Application.Locking.executor": "Run",
-    "Application.MAC_Address.executor": "Run",
-    "Application.Main (1).executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MapExample.executor": "Run",
-    "Application.Networking.MAC_Address.executor": "Run",
-    "Application.OOPs.Abstraction.Main.executor": "Run",
-    "Application.OOPs.Class.Main.executor": "Run",
-    "Application.OOPs.CollectionFrameWork.Main.executor": "Run",
-    "Application.OOPs.Encapsulation.Main.executor": "Run",
-    "Application.OOPs.Generics.Main.executor": "Run",
-    "Application.OOPs.Inheritance.Main.executor": "Run",
-    "Application.OOPs.Interface.Main.executor": "Run",
-    "Application.OOPs.Package.Main.executor": "Run",
-    "Application.Operations.executor": "Run",
-    "Application.Optional.Main.executor": "Run",
-    "Application.ParallelStreamExample.executor": "Run",
-    "Application.PeriodExample.executor": "Run",
-    "Application.ReadWrite.executor": "Run",
-    "Application.Serialization.Main.executor": "Run",
-    "Application.Serialize.executor": "Run",
-    "Application.SortedExample.executor": "Run",
-    "Application.TableSync.executor": "Run",
-    "Application.TestAnnotation.executor": "Run",
-    "Application.ThreadCommunication.executor": "Run",
-    "Application.ThreadPooling.executor": "Run",
-    "Application.Threading.Main.executor": "Run",
-    "Application.ZonedDateTimeExample.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "main",
-    "ignore.preview.features.used": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Dell/Desktop/Projects/Java/Core Java",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/Dell/Desktop/Projects/Java/Core Java/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "settings.sync",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Annotation.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CallableExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CollectionEx.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Comparator.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Creation.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CustomSorting.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CyclicBarrierExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DaemonThread.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DateTimeFormatterExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DeSerialize.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Deadlock.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DistinctExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DurationExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExceptionHandling.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FilterMethod.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Future.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.InstantExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Labmda.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ListNetworkInterfaces.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LocalDateExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LocalDateTimeExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LocalTimeExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Locking.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MAC_Address.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MapExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Networking.MAC_Address.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.Abstraction.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.Class.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.CollectionFrameWork.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.Encapsulation.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.Generics.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.Inheritance.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.Interface.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OOPs.Package.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Operations.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Optional.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ParallelStreamExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PeriodExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReadWrite.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Serialization.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Serialize.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SortedExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TableSync.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestAnnotation.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ThreadCommunication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ThreadPooling.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Threading.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ZonedDateTimeExample.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dell/Desktop/Projects/Java/Core Java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Dell/Desktop/Projects/Java/Core Java/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="QodanaIsSelectedPersistenceService">
     <option name="selectedOrLoading" value="true" />
   </component>
@@ -143,7 +142,7 @@
       <recent name="C:\Users\Dell\Desktop\Projects\Java\Core Java\src\Serialization" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CollectionsEx">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Annotation.Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Annotation.Main" />
       <module name="Core Java" />
@@ -218,8 +217,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CollectionsEx" />
         <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.CollectionsEx" />
         <item itemvalue="Application.Creation" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.SortedExample" />
@@ -298,7 +297,11 @@
       <workItem from="1735562393199" duration="1139000" />
       <workItem from="1735575860547" duration="450000" />
       <workItem from="1735648838544" duration="257000" />
-      <workItem from="1735665360104" duration="2432000" />
+      <workItem from="1735665360104" duration="2658000" />
+      <workItem from="1735668171102" duration="20000" />
+      <workItem from="1735668199973" duration="7000" />
+      <workItem from="1735844570638" duration="232000" />
+      <workItem from="1735844815682" duration="36000" />
     </task>
     <servers />
   </component>
