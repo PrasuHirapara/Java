@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="414a0ab2-33ae-4c10-80d2-598b2fa50994" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Project/CryptoFlow/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/CryptoFlow/backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Project/CryptoFlow/backend/src/main/java/com/cryptoflow/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/CryptoFlow/backend/src/main/java/com/cryptoflow/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Project/CryptoFlow/backend/src/main/java/com/cryptoflow/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/CryptoFlow/backend/src/main/java/com/cryptoflow/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/Spring Security/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="414a0ab2-33ae-4c10-80d2-598b2fa50994" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -302,6 +295,7 @@
       <workItem from="1735668199973" duration="7000" />
       <workItem from="1735844570638" duration="232000" />
       <workItem from="1735844815682" duration="36000" />
+      <workItem from="1736270932689" duration="3000" />
     </task>
     <servers />
   </component>
