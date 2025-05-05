@@ -1,23 +1,25 @@
-package com.springjwt.config;
+## SecurityFilterChain
 
-import com.springjwt.service.CustomUserService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.ProviderManager;
-import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+### Introduction
 
+* Core component in Spring Security that defines how HTTP security is configured.
+* Declared as a `@Bean` to customize security behavior across different endpoints.
+* Manages filters, CSRF settings, session policies, and request authorizations.
+* Responsible for plugging in custom filters like JWT authentication filter.
+* Binds URL patterns to security rules.
+
+### Methods
+
+| Return Type         | Method Name & Parameters         | Description                                                                 |
+| ------------------- | -------------------------------- | --------------------------------------------------------------------------- |
+| SecurityFilterChain | `filterChain(HttpSecurity http)` | Configures HTTP security, authorizations, and adds JWT filter to the chain. |
+
+### Code Implementation
+
+```java
 @Configuration
 @EnableWebSecurity
-public class SecurityConfiguration {
+public class JWTConfig {
 
     @Autowired
     JwtAuthFilter jwtAuthFilter;
@@ -55,3 +57,4 @@ public class SecurityConfiguration {
         return new ProviderManager(daoAuthenticationProvider);
     }
 }
+```

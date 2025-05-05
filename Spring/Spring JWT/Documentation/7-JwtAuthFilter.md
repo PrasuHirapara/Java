@@ -1,21 +1,23 @@
-package com.springjwt.config;
+## JwtAuthFilter
 
-import com.springjwt.service.CustomUserService;
-import com.springjwt.util.JWTUtil;
-import jakarta.servlet.FilterChain;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
-import org.springframework.stereotype.Component;
-import org.springframework.web.filter.OncePerRequestFilter;
+### Introduction
 
-import java.io.IOException;
+* Custom filter extending `OncePerRequestFilter`.
+* Intercepts every incoming request.
+* Extracts JWT token from the `Authorization` header.
+* Validates token using `JWTUtil`.
+* If valid, sets authentication in Spring Security's `SecurityContextHolder`.
+* Allows the request to proceed if token is valid.
 
+### Methods
+
+| Return Type | Method Name & Parameters                                                                        | Description                                                               |
+| ----------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| void        | `doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain)` | Extracts JWT, validates it, and sets the authentication context if valid. |
+
+### Code Implementation
+
+```java
 @Component
 public class JwtAuthFilter extends OncePerRequestFilter {
 
@@ -26,7 +28,9 @@ public class JwtAuthFilter extends OncePerRequestFilter {
     CustomUserService customUserService;
 
     @Override
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
+            throws ServletException, IOException {
+
         String authHeader = request.getHeader("Authorization");
         String authToken = null;
         String username = null;
@@ -44,7 +48,6 @@ public class JwtAuthFilter extends OncePerRequestFilter {
                         new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
 
                 authenticationToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
-
                 SecurityContextHolder.getContext().setAuthentication(authenticationToken);
             }
         }
@@ -52,3 +55,4 @@ public class JwtAuthFilter extends OncePerRequestFilter {
         filterChain.doFilter(request, response);
     }
 }
+```
