@@ -5,80 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="414a0ab2-33ae-4c10-80d2-598b2fa50994" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Spring/Spring AI/src/main/java/com/prasu/controller/GenAIController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Documentations/Encryption/BCryptPasswordEncoder.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Documentations/Encryption/PasswordEncoder.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Documentations/Events/ApplicationEventPublisher.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Documentations/Events/EventListner.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Documentations/OAuth2/AbstractionProtocolFlow.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Documentations/OAuth2/Authentication.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Documentations/OAuth2/Config/AuthenticationManagerBuilder.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Documentations/OAuth2/Config/InMemoryRegisteredClientRepository.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Documentations/OAuth2/Config/OAuth2AuthorizationServerConfiguration.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Documentations/OAuth2/Config/RegisteredClient.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Documentations/OAuth2/Config/RegisteredClientRepository.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Documentations/OAuth2/Config/SecurityFilterChain.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Documentations/OAuth2/HttpSecurity.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Documentations/OAuth2/Principal.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Documentations/OAuth2/UserDetailsService.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Documentations/OAuth2/UsernamePasswordAuthenticationToken.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Documentations/OAuth2/info.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Documentations/Securiity/SecurityFilterChain.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Documentations/Token/UUID.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Documentations/info.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-authorization-server/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-authorization-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-authorization-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-authorization-server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-authorization-server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-authorization-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-authorization-server/src/main/java/prasu/Config/AuthorizationServerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-authorization-server/src/main/java/prasu/Config/DefaultSecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-authorization-server/src/main/java/prasu/Entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-authorization-server/src/main/java/prasu/OauthAuthorizationServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-authorization-server/src/main/java/prasu/Repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-authorization-server/src/main/java/prasu/Service/CustomAuthenticationProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-authorization-server/src/main/java/prasu/Service/CustomUserDetailsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-authorization-server/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-resource-server/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-resource-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-resource-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-resource-server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-resource-server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-resource-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-resource-server/src/main/java/prasu/Config/ResourceServerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-resource-server/src/main/java/prasu/Controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-resource-server/src/main/java/prasu/OauthResourceServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/Oauth-resource-server/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/spring-security-client/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/spring-security-client/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/spring-security-client/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/spring-security-client/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/spring-security-client/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/spring-security-client/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/spring-security-client/src/main/java/prasu/Configuration/WebSecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/spring-security-client/src/main/java/prasu/Controller/Hello.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/spring-security-client/src/main/java/prasu/Controller/RegistrationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/spring-security-client/src/main/java/prasu/Entity/PasswordResendToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/spring-security-client/src/main/java/prasu/Entity/VerificationToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/spring-security-client/src/main/java/prasu/Event/RegistrationEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/spring-security-client/src/main/java/prasu/Listners/RegistrationListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/spring-security-client/src/main/java/prasu/Model/PasswordModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/spring-security-client/src/main/java/prasu/Model/UserModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/spring-security-client/src/main/java/prasu/Repository/PasswordResendRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/spring-security-client/src/main/java/prasu/Repository/VerificationTokenRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/spring-security-client/src/main/java/prasu/Service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/spring-security-client/src/main/java/prasu/Service/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/spring-security-client/src/main/java/prasu/SpringSecurityClientApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/spring-security-client/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInfo.ser" beforeDir="false" afterPath="$PROJECT_DIR$/UserInfo.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qodana.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/Spring JWT/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/Spring JWT/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/Spring Security/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/Spring Security/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot/src/main/java/prasu/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/src/main/java/prasu/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +49,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-23.0.1/lib/src.zip!/java.base/java/lang/String.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Threading/Main.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
@@ -210,94 +150,25 @@
       <recent name="C:\Users\Dell\Desktop\Projects\Java\Core Java\src\Serialization" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Annotation.Main" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Annotation.Main" />
-      <module name="Core Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Annotation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CollectionsEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Collection.CollectionsEx" />
-      <module name="Core Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Collection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Creation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StreamAPI.Creation" />
-      <module name="Core Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="StreamAPI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Core Java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Reflection.Main" />
-      <module name="Core Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Reflection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SortedExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StreamAPI.SortedExample" />
-      <module name="Core Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="StreamAPI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.CollectionsEx" />
-        <item itemvalue="Application.Creation" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.SortedExample" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.25557.131" />
+        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-IU-252.25557.131" />
       </set>
     </attachedChunks>
   </component>
@@ -374,6 +245,23 @@
       <workItem from="1741414957047" duration="3000" />
       <workItem from="1744954594534" duration="1033000" />
       <workItem from="1745424025741" duration="19000" />
+      <workItem from="1747061666089" duration="1049000" />
+      <workItem from="1747587912280" duration="43000" />
+      <workItem from="1754544588666" duration="316000" />
+      <workItem from="1754740004031" duration="51000" />
+      <workItem from="1754740098046" duration="1104000" />
+      <workItem from="1754741902756" duration="82000" />
+      <workItem from="1754742643799" duration="85000" />
+      <workItem from="1754919673547" duration="3000" />
+      <workItem from="1755444557792" duration="250000" />
+      <workItem from="1755455711691" duration="9000" />
+      <workItem from="1756481775385" duration="1587000" />
+      <workItem from="1756528799648" duration="5000" />
+      <workItem from="1757345466465" duration="351000" />
+      <workItem from="1757397282257" duration="6000" />
+      <workItem from="1757747943280" duration="26000" />
+      <workItem from="1761748802922" duration="4161000" />
+      <workItem from="1761753324117" duration="413000" />
     </task>
     <servers />
   </component>
