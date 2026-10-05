@@ -17,8 +17,7 @@ public class B_SquareServlet extends HttpServlet {
         try{
             Optional<Integer> num = Optional.of(Integer.parseInt(req.getParameter("num")));
             Optional<Integer> square = Optional.of(num.get() * num.get());
-//            String name = req.getAttribute("name").toString(); // from RequestDispatcher
-            String name = req.getParameter("name"); // from sendRedirect
+            String name = req.getParameter("name").toString(); // from sendRedirect
 
             out.println("<h1> Name = " + name + "</h1>");
             out.println("<h1>Square of " + num.get() + " = " + square.get() + "</h1>");

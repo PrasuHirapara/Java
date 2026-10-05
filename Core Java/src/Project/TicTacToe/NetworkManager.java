@@ -24,7 +24,11 @@ public class NetworkManager {
         System.out.println("Waiting for opponent to connect...");
         Socket client = serverSocket.accept();
         // We don't need serverSocket after accepted (close it)
-        try { serverSocket.close(); } catch (IOException ignored) {}
+        try {
+            serverSocket.close();
+        } catch (IOException ignored) {
+            throw new IOException("Error closing server socket" +  ignored.getMessage());
+        }
         System.out.println("Opponent connected from: " + client.getRemoteSocketAddress());
         return client;
     }
